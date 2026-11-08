@@ -1,0 +1,217 @@
+{
+  "workbook_rows_all": 1557,
+  "workbook_rows_counted": 1272,
+  "files_counted": 49,
+  "documents_counted": 32,
+  "nashvillenext_files": 17,
+  "documents_with_forest_recommendations": 15,
+  "documents_with_forest_recommendations_list": [
+    "Climate_Adaptation_Resilience_Plan_2024_Final",
+    "Concept_2010_General_Plan_1992",
+    "General_Plan_1980_2000",
+    "Green_Infrastructure_Master_Plan_2009",
+    "Hazard_Mitigation_Plan_2026_Final",
+    "Home_Buyout_Audit_2014",
+    "MS4_Annual_Report_FY19",
+    "NEA_1973_Natural_Environmental_Analysis",
+    "NashvilleNext",
+    "Nashville_Open_Space_Plan_2011",
+    "Plan_to_Play_2017_Full_Plan",
+    "Plan_to_Play_2026",
+    "Tree_Canopy_Assessment_2010",
+    "Urban_Forestry_Landscape_Master_Plan_2016",
+    "Urban_Tree_Canopy_Assessment_2023"
+  ],
+  "recommendations_all_topics": 621,
+  "recommendations_by_type": {
+    "recommendation": 377,
+    "commitment": 121,
+    "target": 101,
+    "funding_estimate": 22
+  },
+  "recommendations_forest": 340,
+  "recommendations_forest_by_type": {
+    "recommendation": 192,
+    "target": 80,
+    "commitment": 67,
+    "funding_estimate": 1
+  },
+  "recurring19_rows": 216,
+  "recurring19_distinct": 19,
+  "recurring19_documents": 13,
+  "core12_rows": 163,
+  "core12_distinct": 12,
+  "core12_documents": 13,
+  "recurring19_years": [
+    1973,
+    2026
+  ],
+  "core12_years": [
+    1973,
+    2026
+  ],
+  "recurring19_document_list": [
+    "Climate_Adaptation_Resilience_Plan_2024_Final",
+    "Concept_2010_General_Plan_1992",
+    "General_Plan_1980_2000",
+    "Hazard_Mitigation_Plan_2026_Final",
+    "MS4_Annual_Report_FY19",
+    "NEA_1973_Natural_Environmental_Analysis",
+    "NashvilleNext",
+    "Nashville_Open_Space_Plan_2011",
+    "Plan_to_Play_2017_Full_Plan",
+    "Plan_to_Play_2026",
+    "Tree_Canopy_Assessment_2010",
+    "Urban_Forestry_Landscape_Master_Plan_2016",
+    "Urban_Tree_Canopy_Assessment_2023"
+  ],
+  "status_19": {
+    "Partly implemented": 15,
+    "No implementation reported": 3,
+    "Implemented": 1
+  },
+  "status_core12": {
+    "Partly implemented": 10,
+    "No implementation reported": 2
+  },
+  "per_recommendation": {
+    "P01": {
+      "times": 29,
+      "documents": 5,
+      "first_year": 1973
+    },
+    "P02": {
+      "times": 15,
+      "documents": 3,
+      "first_year": 1973
+    },
+    "P03": {
+      "times": 15,
+      "documents": 5,
+      "first_year": 1973
+    },
+    "P04": {
+      "times": 12,
+      "documents": 5,
+      "first_year": 1981
+    },
+    "P05": {
+      "times": 15,
+      "documents": 5,
+      "first_year": 1973
+    },
+    "P06": {
+      "times": 9,
+      "documents": 5,
+      "first_year": 1992
+    },
+    "P07": {
+      "times": 22,
+      "documents": 6,
+      "first_year": 1973
+    },
+    "P08": {
+      "times": 16,
+      "documents": 7,
+      "first_year": 1973
+    },
+    "P09": {
+      "times": 19,
+      "documents": 4,
+      "first_year": 2011
+    },
+    "P10": {
+      "times": 1,
+      "documents": 1,
+      "first_year": 2011
+    },
+    "P11": {
+      "times": 9,
+      "documents": 3,
+      "first_year": 2011
+    },
+    "P12": {
+      "times": 1,
+      "documents": 1,
+      "first_year": 2015
+    },
+    "P13": {
+      "times": 9,
+      "documents": 3,
+      "first_year": 1981
+    },
+    "P14": {
+      "times": 9,
+      "documents": 6,
+      "first_year": 2010
+    },
+    "P15": {
+      "times": 8,
+      "documents": 6,
+      "first_year": 1973
+    },
+    "P16": {
+      "times": 5,
+      "documents": 2,
+      "first_year": 1981
+    },
+    "P17": {
+      "times": 8,
+      "documents": 2,
+      "first_year": 1981
+    },
+    "P18": {
+      "times": 7,
+      "documents": 4,
+      "first_year": 1973
+    },
+    "P19": {
+      "times": 7,
+      "documents": 3,
+      "first_year": 1981
+    }
+  },
+  "brief_rows_any": 140,
+  "brief_documents_any": 13,
+  "brief_rows_full": 46,
+  "brief_documents_full": 10,
+  "enacted_rule_documents": [
+    "Executive_Order_041A_2024",
+    "Metro_Code_17.28.030",
+    "Metro_Code_17.28.065",
+    "Metro_Code_17.40.440",
+    "Ordinance_BL2017-725",
+    "Ordinance_BL2021-829",
+    "Subdivision_Regulations_Chapter_4_2024"
+  ],
+  "resolution_documents": [
+    "Resolution_RS2025-1549",
+    "Resolution_RS2025-1556"
+  ],
+  "documents_without_forest_recommendations": 17,
+  "ruled_enacted_present": [
+    "Ordinance_BL2021-829",
+    "Executive_Order_041A_2024",
+    "Metro_Code_17.28.030"
+  ],
+  "funding_allocated_rows": 19,
+  "funding_allocated_forest_rows": 0,
+  "pvd_pairs_all": 27,
+  "pvd_tally_all": {
+    "No status reported": 9,
+    "Partly met": 7,
+    "Not verified": 4,
+    "Not yet due": 3,
+    "Goal restated": 2,
+    "Not met": 2
+  },
+  "pvd_pairs_counted_docs": 25,
+  "pvd_tally_counted_docs": {
+    "No status reported": 9,
+    "Partly met": 6,
+    "Not yet due": 3,
+    "Not verified": 3,
+    "Goal restated": 2,
+    "Not met": 2
+  }
+}

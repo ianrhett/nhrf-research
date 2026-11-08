@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recommended 216 Times</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  :root { --forest: #1f4d36; --tint: #eef3ef; --ink: #1a1a1a; --mute: #5f6661; --miss: #b3261e; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--ink); font-size: 10.5pt; line-height: 1.38; }
+  .page { width: 8.5in; height: 11in; box-sizing: border-box; display: flex; flex-direction: column; }
+  header { background: var(--forest); color: #fff; padding: 0.32in 0.65in 0.2in; }
+  .kicker { font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: #b9d3c1; margin: 0 0 8pt; }
+  h1 { font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-weight: 700; font-size: 38pt; line-height: 1; margin: 0 0 10pt; letter-spacing: -0.01em; }
+  .dek { font-size: 12pt; line-height: 1.35; margin: 0; max-width: 33em; color: #e7efe9; }
+  main { padding: 0.2in 0.65in 0; flex: 1; }
+  .hero { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 30pt; align-items: start; padding-bottom: 10pt; border-bottom: 1pt solid #cfd8d2; }
+  .stat b { display: block; font-size: 40pt; line-height: 0.95; font-weight: 700; letter-spacing: -0.02em; }
+  .stat span { display: block; font-size: 10pt; color: var(--mute); margin-top: 4pt; max-width: 17em; }
+  .stat.green b { color: var(--forest); }
+  .stat.red b { color: var(--miss); }
+  .stat.small b { font-size: 40pt; color: var(--miss); }
+  h2 { font-size: 9pt; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin: 12pt 0 2pt; }
+  .sub { font-size: 9.5pt; color: var(--mute); margin: 0 0 6pt; }
+  .panels { display: grid; grid-template-columns: 1fr; gap: 0 14pt; margin-top: 6pt; }
+  .panel { background: var(--tint); padding: 8pt 13pt 7pt; }
+  .panel h3 { font-size: 9pt; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin: 0 0 5pt; }
+  .panel p { margin: 0; }
+  .panel .big { font-size: 20pt; font-weight: 700; color: var(--forest); line-height: 1; margin-bottom: 4pt; }
+  .tests { margin: 0; padding: 0; list-style: none; }
+  .tests li { margin: 0 0 3pt; }
+  blockquote { margin: 7pt 0 0; padding-left: 12pt; border-left: 3pt solid var(--forest); font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-size: 15pt; line-height: 1.25; }
+  blockquote cite { display: block; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: normal; font-size: 9pt; color: var(--mute); margin-top: 4pt; }
+  footer { padding: 0 0.65in 0.36in; font-size: 7.5pt; color: var(--mute); }
+  footer p { border-top: 0.75pt solid #cfd8d2; padding-top: 6pt; margin: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <p class="kicker">Nashville's Highland Rim Forest · Metro's own plans, 1973 to 2026</p>
+  <h1>Recommended 216 times.</h1>
+  <p class="dek">Since 1973, Metro Nashville's own plans have made the same 19 recommendations for the forest that rings the city, 216 times over 53 years. One is classified implemented.</p>
+</header>
+<main>
+  <div class="hero">
+    <div class="stat green"><b>216</b><span>times Metro's plans made the same 19 forest recommendations, in 13 documents</span></div>
+    <div class="stat red"><b>1 of 19</b><span>classified implemented: the urban forestry program; 15 partly implemented, 3 with no implementation reported</span></div>
+    <div class="stat small"><b>15 of 32</b><span>Metro documents we reviewed make forest recommendations</span></div>
+  </div>
+
+  <h2>The same 19 recommendations, 1973 to 2026</h2>
+  <p class="sub">Each dot is a year a Metro plan made the recommendation; larger dots mean more statements that year. Gaps are years with no plan in our sources.</p>
+  {{CHART}}
+
+  <div class="panels">
+    <div class="panel">
+      <h3>For the Ecological Conservation Strategy</h3>
+      <p><b>Bind it.</b> Adopted rules and code, not policy. <b>Fund it.</b> Dollars tied to acres. <b>Report it.</b> Dated targets and a yearly public report.</p>
+    </div>
+  </div>
+
+  <blockquote>"…we have all the plans we need to make progress."<cite>Freddie O'Connell, "15 Fixes on Day One," 2023 mayoral campaign</cite></blockquote>
+</main>
+<footer><p>Alliance to Conserve Nashville's Highland Rim Forest · November 2026. We reviewed 32 Metro documents, 1973 to 2026 (plans, studies, reports, and the ordinances, code and minutes that show what was enacted), and pulled 1,272 statements on forests, trees, open space and slopes. 340 are forest recommendations, in 15 documents; 216 restate the same 19 shown here. Every figure traces to a document and page (research workbook v1.6.0). *Alliance report; records requested.</p></footer>
+</div>
+</body>
+</html>
