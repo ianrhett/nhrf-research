@@ -56,7 +56,7 @@ The core files were previously verified byte-identical between the public frozen
 
 Original archive: https://www.nashvillehighlandrimforest.org/archive/PlanningCommissionNaturalEnvironmentalAnalysis1973.pdf
 
-P02 dataset pages: **22, 106, 137, 139 (2 records), 140, 141, 144, 149, 151** (10 records).
+P02 dataset pages: **22, 106, 137 (2 records), 139 (2 records), 140, 141, 144, 149, 151** (11 records).
 
 Key passages to inspect against the original source:
 
