@@ -1,0 +1,56 @@
+metric,published/expected,reproduced,status,note
+total_extracted_rows,1557,1557,dataset confirmed,CSV rebuild == count_funnel.py
+counted_rows,1272,1272,dataset confirmed,CSV rebuild == count_funnel.py
+counted_files,49,49,dataset confirmed,CSV rebuild == count_funnel.py
+consolidated_documents,32,32,dataset confirmed,CSV rebuild == count_funnel.py
+forest_records,340,340,dataset confirmed,CSV rebuild == count_funnel.py
+forest_documents,15,15,dataset confirmed,CSV rebuild == count_funnel.py
+selected_records_P01_P19,216,216,dataset confirmed,CSV rebuild == count_funnel.py
+selected_distinct_groups,19,19,dataset confirmed,CSV rebuild == count_funnel.py
+selected_documents,13,13,dataset confirmed,CSV rebuild == count_funnel.py
+type_recommendation,137,137,dataset confirmed,CSV rebuild
+type_commitment,43,43,dataset confirmed,CSV rebuild
+type_target,35,35,dataset confirmed,CSV rebuild
+type_funding_estimate,1,1,dataset confirmed,CSV rebuild
+p01_included_enacted,30,30,dataset confirmed,promise_counts.csv P01=30 includes Metro_Code_17.28.030 row 17.28.030.A.2
+p01_excluded_enacted,29,29,dataset confirmed,count_funnel.py excludes the enacted code rule (recs & ~enacted)
+all19_sum_included,217,217,dataset confirmed,promise_counts.csv times column sums to 217 (enacted row included)
+all19_sum_excluded,216,216,dataset confirmed,recommendations.csv / count_funnel.py sum to 216 (enacted row excluded)
+group_record_count_P01,29,29,dataset confirmed,count_funnel.py / recommendations.csv value; promise_counts.csv lists 30 (enacted row)
+group_record_count_P02,15,15,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P03,15,15,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P04,12,12,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P05,15,15,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P06,9,9,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P07,22,22,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P08,16,16,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P09,19,19,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P10,1,1,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P11,9,9,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P12,1,1,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P13,9,9,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P14,9,9,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P15,8,8,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P16,5,5,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P17,8,8,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P18,7,7,dataset confirmed,count_funnel.py / recommendations.csv value
+group_record_count_P19,7,7,dataset confirmed,count_funnel.py / recommendations.csv value
+group_consolidated_docs_P01,5,5,dataset confirmed,consolidated=5; published source-file count=13; DISCREPANCY (files>documents)
+group_consolidated_docs_P02,3,3,dataset confirmed,consolidated=3; published source-file count=3; matches
+group_consolidated_docs_P03,5,5,dataset confirmed,consolidated=5; published source-file count=8; DISCREPANCY (files>documents)
+group_consolidated_docs_P04,5,5,dataset confirmed,consolidated=5; published source-file count=7; DISCREPANCY (files>documents)
+group_consolidated_docs_P05,5,5,dataset confirmed,consolidated=5; published source-file count=8; DISCREPANCY (files>documents)
+group_consolidated_docs_P06,5,5,dataset confirmed,consolidated=5; published source-file count=7; DISCREPANCY (files>documents)
+group_consolidated_docs_P07,6,6,dataset confirmed,consolidated=6; published source-file count=8; DISCREPANCY (files>documents)
+group_consolidated_docs_P08,7,7,dataset confirmed,consolidated=7; published source-file count=7; matches
+group_consolidated_docs_P09,4,4,dataset confirmed,consolidated=4; published source-file count=5; DISCREPANCY (files>documents)
+group_consolidated_docs_P10,1,1,dataset confirmed,consolidated=1; published source-file count=1; matches
+group_consolidated_docs_P11,3,3,dataset confirmed,consolidated=3; published source-file count=5; DISCREPANCY (files>documents)
+group_consolidated_docs_P12,1,1,dataset confirmed,consolidated=1; published source-file count=1; matches
+group_consolidated_docs_P13,3,3,dataset confirmed,consolidated=3; published source-file count=3; matches
+group_consolidated_docs_P14,6,6,dataset confirmed,consolidated=6; published source-file count=6; matches
+group_consolidated_docs_P15,6,6,dataset confirmed,consolidated=6; published source-file count=6; matches
+group_consolidated_docs_P16,2,2,dataset confirmed,consolidated=2; published source-file count=2; matches
+group_consolidated_docs_P17,2,2,dataset confirmed,consolidated=2; published source-file count=4; DISCREPANCY (files>documents)
+group_consolidated_docs_P18,4,4,dataset confirmed,consolidated=4; published source-file count=6; DISCREPANCY (files>documents)
+group_consolidated_docs_P19,3,3,dataset confirmed,consolidated=3; published source-file count=5; DISCREPANCY (files>documents)
