@@ -4,6 +4,7 @@ Usage: python3 build_one_pager.py <commitments_dir> one-pager.tmpl.html one-page
 Then print to PDF with headless Chrome (v1.7.1: NHRF_Recommended_216_Times_v1.7.1.pdf): --headless=new --no-pdf-header-footer --print-to-pdf=<out.pdf> file://<one-pager.html>
 Counts come from promise_groups.csv (counted documents only; enacted rules and allocations excluded, FACTS.md section I) and statuses from distinct_promises.csv; row labels and short notes are in LBL.
 v1.7.0 (NHRF-DOCLIST-001) adds "The documents": the counted documents with forest recommendations (FACTS.md D2), year and title, sorted by year, from sources.csv and commitments.csv; the document names are in NAME.
+v1.7.2 (NHRF-CO-VERIFY002-002, 2026-11-24): footer states all 216 were verified against original sources (two blind independent source reviews); output NHRF_Recommended_216_Times_v1.7.2.pdf.
 v1.7.1 (NHRF-MONEY-001 follow-up, 2026-11-08): P08 note no longer says "unfunded"; 27DS0031 is listed in the adopted FY2027 CIB and was left out of the FY2027 Capital Spending Plan adopted Nov 5, 2026 (FACTS.md F10).
 """
 import csv, math, re, sys
