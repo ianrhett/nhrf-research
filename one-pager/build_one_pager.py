@@ -1,10 +1,11 @@
 """Build the one-page summary (all 19 recommendations, dot timeline) from the workbook CSVs.
 
 Usage: python3 build_one_pager.py <commitments_dir> one-pager.tmpl.html one-pager.html
-Then print to PDF with headless Chrome (v1.7.1: NHRF_Recommended_216_Times_v1.7.1.pdf): --headless=new --no-pdf-header-footer --print-to-pdf=<out.pdf> file://<one-pager.html>
+Then print to PDF with headless Chrome (v1.7.2: NHRF_Recommended_216_Times_v1.7.2.pdf): --headless=new --no-pdf-header-footer --print-to-pdf=<out.pdf> file://<one-pager.html>
 Counts come from promise_groups.csv (counted documents only; enacted rules and allocations excluded, FACTS.md section I) and statuses from distinct_promises.csv; row labels and short notes are in LBL.
 v1.7.0 (NHRF-DOCLIST-001) adds "The documents": the counted documents with forest recommendations (FACTS.md D2), year and title, sorted by year, from sources.csv and commitments.csv; the document names are in NAME.
 v1.7.1 (NHRF-MONEY-001 follow-up, 2026-11-08): P08 note no longer says "unfunded"; 27DS0031 is listed in the adopted FY2027 CIB and was left out of the FY2027 Capital Spending Plan adopted Nov 5, 2026 (FACTS.md F10).
+v1.7.2 (2026-11-24): P10 note uses the scoped absence wording of FACTS.md section I ("No record found in FY2017 to FY2026 Capital Spending Plans") in place of "No record of the fund since 2011", which claimed a wider search than was run. P03 note drops "extensions go on*" and the template drops its footnote ("*Alliance report; records requested."): an Alliance report awaiting records has no document and page cite (FACTS.md rule 2). The chart box is 970 wide (was 960) so the P10 note is not clipped at the right margin.
 """
 import csv, math, re, sys
 from collections import Counter
@@ -18,14 +19,14 @@ groups = [r for r in csv.DictReader(open(f'{C}/promise_groups.csv', encoding='ut
 dp = {r['promise_id']: r for r in csv.DictReader(open(f'{C}/distinct_promises.csv', encoding='utf-8'))}
 LBL = {'P01': ('Keep building off steep slopes', '15% rule only for rural subdivisions; else 20%'),
        'P02': ('Preserve the Rim escarpment', 'Policy only; master plan budgeted 2024, not started'),
-       'P03': ('Keep sewers out of rural Rim land', 'No sewer check against policy; extensions go on*'),
+       'P03': ('Keep sewers out of rural Rim land', 'No sewer check against policy'),
        'P04': ('Keep rural land rural', 'Rural subdivision rules only; no farm zoning'),
        'P05': ('Require conservation subdivisions', '50% recommended; 20% enacted, not on AR2a'),
        'P06': ('Protect trees during development', 'Nothing requires keeping existing trees'),
        'P07': ("Hold the county's tree canopy", 'Rural canopy held; no rule protects forest tracts'),
        'P08': ('Buy natural land on the Rim', 'No acquisition program; $7M easement line not appropriated'),
        'P09': ('Meet the conserved-land goals', '4,541-acre goal due 2026; others unreported'),
-       'P10': ('Keep the Open Space Fund funded', 'No record of the fund since 2011'),
+       'P10': ('Keep the Open Space Fund funded', 'No record found in FY2017 to FY2026 Capital Spending Plans'),
        'P11': ('Use easements and development rights', 'Easements once (2009); no TDR for land'),
        'P12': ('Conserve upstream land regionally', 'No agreement or program found'),
        'P13': ("Manage Metro's natural areas", 'Designation policy 2026; no site plans yet'),
@@ -39,7 +40,7 @@ SHORT = {'Implemented': 'Implemented', 'Not implemented': 'Not implemented', 'Pa
 COL = {'Implemented': '#1f4d36', 'Not implemented': '#b3261e', 'Partly implemented': '#a35f00', 'No implementation reported': '#6b6b6b'}
 cnt = Counter((g['promise_id'], year(g['doc'])) for g in groups)
 tot = Counter(g['promise_id'] for g in groups)
-W, X0, X1, ROWH, TOP = 960, 240, 520, 22, 22
+W, X0, X1, ROWH, TOP = 970, 240, 520, 22, 22  # v1.7.2: 960 to 970 so the longer P10 note fits inside the chart; the chart draws about 1% smaller
 x = lambda yr: X0 + (yr - 1973) / (2026 - 1973) * (X1 - X0)
 ids = [p for p in sorted(dp) if int(p[1:]) <= 19]
 H = TOP + ROWH * len(ids) + 22
