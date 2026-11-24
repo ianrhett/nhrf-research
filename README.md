@@ -8,7 +8,7 @@ Since 1973, Metro Nashville has made the same 19 forest recommendations 216 time
 
 | Folder | Contents |
 |---|---|
-| `one-pager/` | `NHRF_Recommended_216_Times_v1.7.2.pdf`, the one-page summary of record (November 2026), with the script and template that build it |
+| `one-pager/` | `NHRF_Recommended_216_Times_v1.7.3.pdf`, the one-page summary of record (November 2026), with the script and template that build it. `v1.7.1` and `v1.7.2` are superseded versions, kept so existing links keep working |
 | `data/` | `NHRF_Commitments.xlsx`, the full workbook; one CSV per tab (`commitments.csv` is every quoted statement with page number; `recommendations.csv` is the 19 with status and evidence; `sources.csv` is every document with its URL and whether it is counted); dated releases in `versions/` |
 | `sources/` | `MANIFEST.csv`: every source document with its official URL, SHA-256 fingerprint, page count and retrieval date. `BUNNY-URLS.csv`: archived copies of each file. Copies of sources that are small enough to keep in git. |
 | `methodology/` | `methodology.html`, the method in plain language: how 1,272 statements became 19 recommendations made 216 times, and how delivery was checked |
