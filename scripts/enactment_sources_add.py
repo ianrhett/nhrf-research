@@ -11,7 +11,7 @@ import openpyxl
 from copy import copy
 
 DL, CDIR = sys.argv[1], sys.argv[2]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 
 CODE = 'Metro_Code_17.28.030'
 MPC = 'MPC_Minutes_2022-04-28'
@@ -169,6 +169,6 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)
 print('written')

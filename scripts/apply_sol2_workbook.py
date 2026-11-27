@@ -13,7 +13,7 @@ import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 
 ROOT = Path(__file__).resolve().parents[2]
-WB_PATH = ROOT / "docs/research/commitments/NHRF_Commitments.xlsx"
+WB_PATH = ROOT / "docs/research/commitments/NHRF_Recommendations.xlsx"
 COVER = ROOT / "artifacts/research-scripts/cover_sheet.py"
 
 

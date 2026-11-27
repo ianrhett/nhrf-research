@@ -41,7 +41,7 @@ That is a successful data reconciliation, not a certification of the correctness
 
 The source table contains 63 rows explicitly marked counted yes/no (49 yes and 14 no). Consolidating NashvilleNext and the 2026 Plan to Play files yields 45 document identifiers across the included/excluded source set; 32 are included. The included set includes legislation, code and other evidence, not exclusively plans. Thus “32 qualifying documents counted” is more accurate than “32 documents reviewed.”
 
-Repository evidence: [commitments.csv](../../data/commitments.csv), [sources.csv](../../data/sources.csv), [promise_groups.csv](../../data/promise_groups.csv), [recommendations.csv](../../data/recommendations.csv), [count_funnel.py](../../scripts/count_funnel.py), [funnel.json](../../scripts/funnel.json).
+Repository evidence: [recommendation_statements.csv](../../data/recommendation_statements.csv), [sources.csv](../../data/sources.csv), [promise_groups.csv](../../data/promise_groups.csv), [recommendations.csv](../../data/recommendations.csv), [count_funnel.py](../../scripts/count_funnel.py), [funnel.json](../../scripts/funnel.json).
 
 ## 3. Findings ledger
 
@@ -255,7 +255,7 @@ for p in sorted({r["promise_id"] for r in t}):
 print(Counter(r["status"] for r in load("recommendations")))
 ```
 
-The original audit used an independent JavaScript CSV parser and cross-checked the separate promise_groups.csv filter; the above is a portable Python equivalent provided for reviewers, not a claim that this exact snippet was executed. The original workbook script can be run as `python3 scripts/count_funnel.py data/NHRF_Commitments.xlsx` with pandas and openpyxl installed.
+The original audit used an independent JavaScript CSV parser and cross-checked the separate promise_groups.csv filter; the above is a portable Python equivalent provided for reviewers, not a claim that this exact snippet was executed. The original workbook script can be run as `python3 scripts/count_funnel.py data/NHRF_Recommendations.xlsx` with pandas and openpyxl installed.
 
 ## 7. Candidate publication language (not adopted)
 

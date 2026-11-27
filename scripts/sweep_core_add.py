@@ -13,7 +13,7 @@ import openpyxl
 from copy import copy
 
 PDF_DIR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 wb0 = openpyxl.load_workbook(XLSX, read_only=True)
 URL = {r[0]: r[5] for r in wb0['Sources'].iter_rows(min_row=2, values_only=True) if r[0] and r[5]}
 SOURCES = []
@@ -121,7 +121,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Inconsistencies', f'{CDIR}/inconsistencies.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)

@@ -3,7 +3,7 @@
 Usage: python3 build_one_pager.py <commitments_dir> one-pager.tmpl.html one-pager.html
 Then print to PDF with headless Chrome (v1.7.3: NHRF_Recommended_216_Times_v1.7.3.pdf): --headless=new --no-pdf-header-footer --print-to-pdf=<out.pdf> file://<one-pager.html>
 Counts come from promise_groups.csv (counted documents only; enacted rules and allocations excluded, FACTS.md section I) and statuses from distinct_promises.csv; row labels and short notes are in LBL.
-v1.7.0 (NHRF-DOCLIST-001) adds "The documents": the counted documents with forest recommendations (FACTS.md D2), year and title, sorted by year, from sources.csv and commitments.csv; the document names are in NAME.
+v1.7.0 (NHRF-DOCLIST-001) adds "The documents": the counted documents with forest recommendations (FACTS.md D2), year and title, sorted by year, from sources.csv and recommendation_statements.csv; the document names are in NAME.
 v1.7.1 (NHRF-MONEY-001 follow-up, 2026-11-08): P08 note no longer says "unfunded"; 27DS0031 is listed in the adopted FY2027 CIB and was left out of the FY2027 Capital Spending Plan adopted Nov 5, 2026 (FACTS.md F10).
 v1.7.2 (NHRF-CO-VERIFY002-002, 2026-11-24): footer states all 216 were verified against original sources (two blind independent source reviews).
 v1.7.3 (2026-11-24): P10 note uses the scoped absence wording of FACTS.md section I ("No record found in FY2017 to FY2026 Capital Spending Plans") in place of "No record of the fund since 2011", which claimed a wider search than was run. P03 note drops "extensions go on*" and the template drops its footnote ("*Alliance report; records requested."): an Alliance report awaiting records has no document and page cite (FACTS.md rule 2). The chart box is 970 wide (was 960) so the P10 note is not clipped at the right margin. Carries the v1.7.2 verified footer.
@@ -15,7 +15,7 @@ src = {r['doc']: r for r in csv.DictReader(open(f'{C}/sources.csv', encoding='ut
 year = lambda d: int((re.search(r'(19|20)\d\d', src[d]['date']) or re.search(r'(19|20)\d\d', d)).group(0))
 ENACTED = {'Ordinance_BL2021-829', 'Executive_Order_041A_2024', 'Metro_Code_17.28.030', 'Metro_Code_17.28.065', 'Metro_Code_17.40.440', 'Ordinance_BL2017-725', 'Resolution_RS2025-1549', 'Resolution_RS2025-1556'}
 REC = {'recommendation', 'commitment', 'target', 'funding_estimate'}
-kind = {(r['doc'], r['pdf_page'], r['metric']): r['item_type'] for r in csv.DictReader(open(f'{C}/commitments.csv', encoding='utf-8'))}
+kind = {(r['doc'], r['pdf_page'], r['metric']): r['item_type'] for r in csv.DictReader(open(f'{C}/recommendation_statements.csv', encoding='utf-8'))}
 groups = [r for r in csv.DictReader(open(f'{C}/promise_groups.csv', encoding='utf-8')) if r['promise_id'].startswith('P') and int(r['promise_id'][1:]) <= 19 and src[r['doc']]['counted'] == 'yes' and r['doc'] not in ENACTED and kind.get((r['doc'], r['pdf_page'], r['metric'])) in REC]
 dp = {r['promise_id']: r for r in csv.DictReader(open(f'{C}/distinct_promises.csv', encoding='utf-8'))}
 LBL = {'P01': ('Keep building off steep slopes', '15% rule only for rural subdivisions; else 20%'),
@@ -89,7 +89,7 @@ NAME = {'NEA_1973_Natural_Environmental_Analysis': 'Natural Environmental Analys
         'Hazard_Mitigation_Plan_2026_Final': 'Hazard Mitigation Plan',
         'Plan_to_Play_2026': 'Plan to Play 2026 Update'}
 docs = set()
-for r in csv.DictReader(open(f'{C}/commitments.csv', encoding='utf-8')):
+for r in csv.DictReader(open(f'{C}/recommendation_statements.csv', encoding='utf-8')):
     d = r['doc']
     if d in src and src[d]['counted'] == 'yes' and d not in RULES and r['item_type'] in REC and (r['category'] in FOREST or re.fullmatch(r'P(0[1-9]|1[0-9])', r['promise_id'] or '')):
         docs.add(document(d))

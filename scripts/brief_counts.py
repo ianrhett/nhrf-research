@@ -1,7 +1,7 @@
 """Count tagged promises per policy-brief recommendation (R01-R19): write brief_rec_counts.csv and print a summary table.
 
 Usage: python3 brief_counts.py <commitments_dir>
-Reads commitments.csv (brief_rec, brief_match columns, added by brief_tags_apply.py --write) and sources.csv. Writes only
+Reads recommendation_statements.csv (brief_rec, brief_match columns, added by brief_tags_apply.py --write) and sources.csv. Writes only
 brief_rec_counts.csv. A 'full' row is a row with any full match; 'full+partial' counts every tagged row once.
 Rows from documents marked counted = 'no' on sources.csv are skipped.
 Year is the document's year from the Sources tab date (same rule as top5_timeline.py).
@@ -12,7 +12,7 @@ CDIR = sys.argv[1]
 RECS = [f'R{i:02d}' for i in range(1, 20)]
 src = {r[0]: r for r in csv.reader(open(f'{CDIR}/sources.csv', encoding='utf-8')) if r and r[0]}
 year = lambda d: int((re.search(r'(19|20)\d\d', src[d][2]) or re.search(r'(19|20)\d\d', d)).group(0))
-com = list(csv.DictReader(open(f'{CDIR}/commitments.csv', encoding='utf-8')))
+com = list(csv.DictReader(open(f'{CDIR}/recommendation_statements.csv', encoding='utf-8')))
 not_counted = {r['doc'] for r in csv.DictReader(open(f'{CDIR}/sources.csv', encoding='utf-8')) if r.get('counted') == 'no'}
 tagged = [c for c in com if c['brief_rec'] and c['doc'] not in not_counted]
 

@@ -12,7 +12,7 @@ import openpyxl
 from copy import copy
 
 MAYOR_HTML, PARKS_PDF, RS_JSON, CDIR = sys.argv[1:5]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 
 MAYOR, PARKS, RS = 'Mayor_Release_Beaman_Park_2026-07-24', 'Parks_Board_Agenda_2026-09-01', 'Resolution_RS2025-1556'
 URL = {
@@ -101,7 +101,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Inconsistencies', f'{CDIR}/inconsistencies.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)

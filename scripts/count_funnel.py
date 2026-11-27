@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import pandas as pd
 
-WB = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parents[2] / "docs/research/commitments/NHRF_Commitments.xlsx")
+WB = sys.argv[1] if len(sys.argv) > 1 else str(Path(__file__).resolve().parents[2] / "docs/research/commitments/NHRF_Recommendations.xlsx")
 
 REC_TYPES = {"recommendation", "commitment", "target", "funding_estimate"}
 FOREST_CATS = {"forest_protection", "tree_canopy", "highland_rim_named_place",

@@ -11,7 +11,7 @@ import openpyxl
 from copy import copy
 
 PDF_DIR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 M15, M16A, M16B = 'MPC_Minutes_2015-06-22', 'MPC_Minutes_2016-04-28', 'MPC_Minutes_2016-05-26'
 FILE = {M15: '150622m.pdf', M16A: '160428m.pdf', M16B: '160526m.pdf'}
 URL = {k: 'https://www.nashville.gov/sites/default/files/2021-09/' + v for k, v in FILE.items()}
@@ -93,7 +93,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Inconsistencies', f'{CDIR}/inconsistencies.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)

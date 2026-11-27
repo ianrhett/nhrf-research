@@ -13,7 +13,7 @@ import openpyxl
 
 CDIR = sys.argv[1]
 WRITE = '--write' in sys.argv[2:]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 NOT_COUNTED = {
     'Livable_Nashville_2017_DRAFT': 'Draft, never adopted',
     'Stormwater_Master_Plan_2025_DRAFT': 'Draft, never adopted',

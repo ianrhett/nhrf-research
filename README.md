@@ -9,7 +9,7 @@ Since 1973, Metro Nashville has made the same 19 forest recommendations 216 time
 | Folder | Contents |
 |---|---|
 | `one-pager/` | `NHRF_Recommended_216_Times_v1.7.3.pdf`, the one-page summary of record (November 2026), with the script and template that build it. `v1.7.1` and `v1.7.2` are superseded versions, kept so existing links keep working |
-| `data/` | `NHRF_Commitments.xlsx`, the full workbook; one CSV per tab (`commitments.csv` is every quoted statement with page number; `recommendations.csv` is the 19 with status and evidence; `sources.csv` is every document with its URL and whether it is counted); dated releases in `versions/` |
+| `data/` | `NHRF_Recommendations.xlsx`, the full workbook; one CSV per tab (`recommendation_statements.csv` is every quoted statement with page number; `recommendations.csv` is the 19 with status and evidence; `sources.csv` is every document with its URL and whether it is counted); dated releases in `versions/` |
 | `sources/` | `MANIFEST.csv`: every source document with its official URL, SHA-256 fingerprint, page count and retrieval date. `BUNNY-URLS.csv`: archived copies of each file. Copies of sources that are small enough to keep in git. |
 | `methodology/` | `methodology.html`, the method in plain language: how 1,272 statements became 19 recommendations made 216 times, and how delivery was checked |
 | `scripts/` | Every script used to extract, group, count and check. `count_funnel.py` produces every published number; its output is `funnel.json`. |
@@ -17,9 +17,9 @@ Since 1973, Metro Nashville has made the same 19 forest recommendations 216 time
 ## How to verify a number
 
 1. Open `data/sources.csv` and pick a document. Its `source_url` is the official Metro copy; `sources/MANIFEST.csv` has the fingerprint of the file we read.
-2. Open `data/commitments.csv`, filter by that document, and read each quoted statement against the stated page.
+2. Open `data/recommendation_statements.csv`, filter by that document, and read each quoted statement against the stated page.
 3. Open `data/recommendations.csv` to see which statements were grouped into which of the 19, and the evidence for each status.
-4. Run `python3 scripts/count_funnel.py` against `data/NHRF_Commitments.xlsx` to reproduce `scripts/funnel.json`.
+4. Run `python3 scripts/count_funnel.py` against `data/NHRF_Recommendations.xlsx` to reproduce `scripts/funnel.json`.
 
 ## Rules we followed
 

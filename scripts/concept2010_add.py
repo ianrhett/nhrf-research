@@ -15,7 +15,7 @@ import openpyxl
 from copy import copy
 
 OCR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 C10 = 'Concept_2010_General_Plan_1992'
 URL = 'https://www.nashvillehighlandrimforest.org/archive/Concept2010.pdf'
 SOURCES = [
@@ -133,7 +133,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)
 print('written')

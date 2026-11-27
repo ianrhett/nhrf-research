@@ -1,4 +1,4 @@
-"""Write the Recommendations tab of NHRF_Commitments.xlsx and its CSV twin, recommendations.csv.
+"""Write the Recommendations tab of NHRF_Recommendations.xlsx and its CSV twin, recommendations.csv.
 
 Usage: python3 recommendations_tab.py <commitments_dir>
 One row per recommendation in promise_counts.csv (P01-P19), joined to distinct_promises.csv for the evidence column
@@ -11,7 +11,7 @@ import openpyxl
 from openpyxl.styles import Alignment
 
 CDIR = sys.argv[1]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 OUT = f'{CDIR}/recommendations.csv'
 HEAD = ['promise_id', 'recommendation', 'priority', 'times', 'documents', 'first_year', 'last_year', 'status', 'what_was_done', 'evidence']
 WIDTHS = [10, 50, 11, 8, 10, 10, 10, 22, 70, 40]

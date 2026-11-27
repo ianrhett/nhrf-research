@@ -4,7 +4,7 @@ Usage: python3 brief_tags_apply.py <commitments_dir> [--write]
 Each tag names a Commitments row (1-based, header is row 1) and must match that row's doc and pdf_page; item_type must
 be a promise-type value; brief_rec (R01-R19, semicolon-separated) and brief_match (full or partial) must pair up.
 Dry run prints 'tags N bad [...]' and exits 1 on any problem. With --write, N1/O1 are set to the headers and N/O are
-set on every data row (None when untagged), so re-running overwrites rather than shifts. Then commitments.csv is rewritten.
+set on every data row (None when untagged), so re-running overwrites rather than shifts. Then recommendation_statements.csv is rewritten.
 """
 import csv, re, sys
 from copy import copy
@@ -12,8 +12,8 @@ import openpyxl
 
 CDIR = sys.argv[1]
 WRITE = '--write' in sys.argv[2:]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
-CSV = f'{CDIR}/commitments.csv'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
+CSV = f'{CDIR}/recommendation_statements.csv'
 TYPES = {'recommendation', 'commitment', 'target', 'funding_estimate', 'funding_allocated'}
 
 wb = openpyxl.load_workbook(XLSX)

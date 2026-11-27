@@ -17,7 +17,7 @@ LABEL = {'F01': 'Limit building on steep slopes', 'F02': 'Conservation subdivisi
 src = {r[0]: r for r in csv.reader(open(f'{CDIR}/sources.csv', encoding='utf-8')) if r and r[0]}
 year = lambda d: int((re.search(r'(19|20)\d\d', src[d][2]) or re.search(r'(19|20)\d\d', d)).group(0))
 not_counted = {r['doc'] for r in csv.DictReader(open(f'{CDIR}/sources.csv', encoding='utf-8')) if r.get('counted') == 'no'}
-com = list(csv.DictReader(open(f'{CDIR}/commitments.csv', encoding='utf-8')))
+com = list(csv.DictReader(open(f'{CDIR}/recommendation_statements.csv', encoding='utf-8')))
 pv = {p['pair']: p['assessment'] for p in csv.DictReader(open(f'{CDIR}/promised_vs_delivered.csv', encoding='utf-8')) if p['pair'].isdigit()}
 
 out = []

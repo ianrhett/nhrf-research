@@ -12,7 +12,7 @@ import openpyxl
 from copy import copy
 
 PDF_DIR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 A, E, F, G, L = ('NashvilleNext_Vol1_ABCD_Intro_2017', 'NashvilleNext_Vol1_E_Key_Issues_2017', 'NashvilleNext_Vol1_F_Guiding_Principles_2017',
                  'NashvilleNext_Vol1_GH_Strategy_Implementation_2017', 'NashvilleNext_Vol2_Land_Use_Transportation_Infrastructure')
 B = 'https://filetransfer.nashville.gov/portals/0/sitecontent/Planning/docs/NashvilleNext/2017Update/'
@@ -138,7 +138,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Inconsistencies', f'{CDIR}/inconsistencies.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)

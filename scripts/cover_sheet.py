@@ -1,6 +1,6 @@
-"""Write or rewrite the About tab (cover sheet) as the first sheet of NHRF_Commitments.xlsx.
+"""Write or rewrite the About tab (cover sheet) as the first sheet of NHRF_Recommendations.xlsx.
 
-Usage: python3 cover_sheet.py <NHRF_Commitments.xlsx>
+Usage: python3 cover_sheet.py <NHRF_Recommendations.xlsx>
 Counts are computed here and written as numbers (previews such as Quick Look and GitHub do not
 recalculate formulas), so rerun this script after any change to the other tabs, and after forest_priorities.py.
 The About tab is explanatory text and has no CSV twin.
@@ -50,7 +50,7 @@ N['baseline_changes'] = sum(1 for c in wb['Inconsistencies']['K'] if str(c.value
 TODAY = os.environ.get('NHRF_ASOF') or datetime.date.today().isoformat()
 _vf = os.path.join(os.path.dirname(os.path.abspath(XLSX)), 'VERSION')
 VERSION_LINE = open(_vf, encoding='utf-8').read().split() if os.path.exists(_vf) else []
-VERSION_TEXT = f'Version {VERSION_LINE[0]}, released {VERSION_LINE[1]}. Shared copies are in versions/ and named by version; NHRF_Commitments.xlsx is the working copy. See CHANGELOG.md.' if VERSION_LINE else 'Unreleased working copy.'
+VERSION_TEXT = f'Version {VERSION_LINE[0]}, released {VERSION_LINE[1]}. Shared copies are in versions/ and named by version; NHRF_Recommendations.xlsx is the working copy. See CHANGELOG.md.' if VERSION_LINE else 'Unreleased working copy.'
 
 # (kind, col A, col B, col C); kind: title, h (section heading), th (table header), row, note
 ROWS = [

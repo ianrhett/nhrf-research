@@ -13,7 +13,7 @@ import openpyxl
 from copy import copy
 
 JOELTON, ECS_HTML, CDIR = sys.argv[1:4]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 
 C65, C440, JOE, ECS = 'Metro_Code_17.28.065', 'Metro_Code_17.40.440', 'NashvilleNext_Vol3_Joelton_2017', 'Ecological_Conservation_Strategy_2026'
 URL = {
@@ -151,7 +151,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)
 

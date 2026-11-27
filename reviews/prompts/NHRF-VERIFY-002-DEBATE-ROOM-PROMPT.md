@@ -137,8 +137,8 @@ All paths below refer to the frozen snapshot.
 
 | File | Purpose |
 |---|---|
-| `data/NHRF_Commitments.xlsx` | Full research workbook |
-| `data/commitments.csv` | Extracted records, quoted passages, source pages, classifications and verification flags |
+| `data/NHRF_Recommendations.xlsx` | Full research workbook |
+| `data/recommendation_statements.csv` | Extracted records, quoted passages, source pages, classifications and verification flags |
 | `data/sources.csv` | Source metadata, official URLs, inclusion decisions |
 | `data/promise_groups.csv` | Mapping of records into recurring recommendation groups |
 | `data/distinct_promises.csv` | Group definitions, implementation classifications and supporting evidence |

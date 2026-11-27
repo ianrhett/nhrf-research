@@ -1,7 +1,7 @@
 """Build the dot-chart data for the presentation and print the headline numbers.
 
 Usage: python3 presentation_data.py <commitments_dir> <out_dir>
-Reads promise_groups.csv, promise_counts.csv, commitments.csv, sources.csv and ../sources/MANIFEST.csv. Same filter as the
+Reads promise_groups.csv, promise_counts.csv, recommendation_statements.csv, sources.csv and ../sources/MANIFEST.csv. Same filter as the
 one-pager (build_one_pager.py; FACTS.md section I): rows grouped P01-P19 in counted documents, enacted-rule documents
 excluded, REC item types only; year from the Sources tab date. Writes <out_dir>/recommendation_dots.csv
 (one row per recommendation per document, with how many times that document made it) and recommendation_dots.json
@@ -31,7 +31,7 @@ counted = {r['doc'] for r in csv.DictReader(open(f'{CDIR}/sources.csv', encoding
 # Same filter as build_one_pager.py: enacted rules and allocations are not recommendations (FACTS.md section I).
 ENACTED = {'Ordinance_BL2021-829', 'Executive_Order_041A_2024', 'Metro_Code_17.28.030', 'Metro_Code_17.28.065', 'Metro_Code_17.40.440', 'Ordinance_BL2017-725', 'Resolution_RS2025-1549', 'Resolution_RS2025-1556'}
 REC = {'recommendation', 'commitment', 'target', 'funding_estimate'}
-kind = {(r['doc'], r['pdf_page'], r['metric']): r['item_type'] for r in csv.DictReader(open(f'{CDIR}/commitments.csv', encoding='utf-8'))}
+kind = {(r['doc'], r['pdf_page'], r['metric']): r['item_type'] for r in csv.DictReader(open(f'{CDIR}/recommendation_statements.csv', encoding='utf-8'))}
 manifest = {r['doc']: r for r in csv.DictReader(open(f'{CDIR}/../sources/MANIFEST.csv', encoding='utf-8'))}
 recs = OrderedDict((r['promise_id'], r) for r in csv.DictReader(open(f'{CDIR}/promise_counts.csv', encoding='utf-8')))
 groups = [g for g in csv.DictReader(open(f'{CDIR}/promise_groups.csv', encoding='utf-8'))

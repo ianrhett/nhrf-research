@@ -17,7 +17,7 @@ import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2]
 CDIR = ROOT / "docs/research/commitments"
-WB_PATH = CDIR / "NHRF_Commitments.xlsx"
+WB_PATH = CDIR / "NHRF_Recommendations.xlsx"
 COVER = ROOT / "artifacts/research-scripts/cover_sheet.py"
 
 CIB = ("listed in the adopted FY2027 capital budget (27DS0031, $7,000,000, requested by At-Large CM "

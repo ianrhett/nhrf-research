@@ -9,7 +9,7 @@ import openpyxl
 from copy import copy
 
 HMP_PDF, CARP_PDF, CDIR = sys.argv[1:4]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 HMP = 'Hazard_Mitigation_Plan_2026_Final'
 CARP = 'Climate_Adaptation_Resilience_Plan_2024_Final'
 PDF = {HMP: HMP_PDF, CARP: CARP_PDF}
@@ -59,6 +59,6 @@ for r in ROWS:
         d.font, d.alignment, d.border, d.fill, d.number_format = copy(s.font), copy(s.alignment), copy(s.border), copy(s.fill), s.number_format
 wb.save(XLSX)
 
-with open(f'{CDIR}/commitments.csv', 'w', encoding='utf-8', newline='') as f:
+with open(f'{CDIR}/recommendation_statements.csv', 'w', encoding='utf-8', newline='') as f:
     csv.writer(f).writerows([['' if v is None else v for v in r] for r in ws.iter_rows(values_only=True)])
 print('written')

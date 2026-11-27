@@ -19,7 +19,7 @@ import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 
 CDIR = sys.argv[1]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 PROMISE = {'recommendation', 'commitment', 'target', 'funding_estimate', 'funding_allocated'}
 FOREST_CATS = {'forest_protection', 'tree_canopy', 'highland_rim_named_place', 'habitat_natural_area', 'land_acquisition', 'open_space'}
 

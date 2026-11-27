@@ -25,7 +25,7 @@ def cell_value(text):
 
 def main():
     if len(sys.argv) != 3:
-        sys.exit("usage: apply_pvd_to_xlsx.py <promised_vs_delivered.csv> <NHRF_Commitments.xlsx>")
+        sys.exit("usage: apply_pvd_to_xlsx.py <promised_vs_delivered.csv> <NHRF_Recommendations.xlsx>")
     csv_path, xlsx_path = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
     rows = list(csv.reader(csv_path.open(newline="", encoding="utf-8")))
     wb = load_workbook(xlsx_path)

@@ -13,7 +13,7 @@ from pathlib import Path
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2]
-WB_PATH = ROOT / "docs/research/commitments/NHRF_Commitments.xlsx"
+WB_PATH = ROOT / "docs/research/commitments/NHRF_Recommendations.xlsx"
 COVER = ROOT / "artifacts/research-scripts/cover_sheet.py"
 FUNNEL = ROOT / "artifacts/research-scripts/count_funnel.py"
 EXCERPT = "Make effort regularly to replenish the Metro Open Space Fund (currently at $5 million)."

@@ -14,7 +14,7 @@ import openpyxl
 from copy import copy
 
 WEB, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 RS = 'Resolution_RS2025-1549'
 BL = 'Ordinance_BL2021-829'
 EO = 'Executive_Order_041A_2024'
@@ -129,7 +129,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Inconsistencies', f'{CDIR}/inconsistencies.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)

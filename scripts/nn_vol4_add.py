@@ -11,7 +11,7 @@ from copy import copy
 from openpyxl.styles import Alignment, Font, PatternFill
 
 PDF, ACTIONS, CDIR = sys.argv[1:4]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 DOC = 'NashvilleNext_Vol4_Actions'
 URL = 'https://filetransfer.nashville.gov/portals/0/sitecontent/Planning/docs/NashvilleNext/PlanVolumes/next-volume4-Actions.pdf'
 
@@ -101,6 +101,6 @@ with open(f'{CDIR}/nn_vol4_actions.csv', 'w', encoding='utf-8', newline='') as f
     w = csv.writer(f)
     w.writerow(COLS)
     w.writerows([['' if v is None else v for v in r] for r in out])
-with open(f'{CDIR}/commitments.csv', 'w', encoding='utf-8', newline='') as f:
+with open(f'{CDIR}/recommendation_statements.csv', 'w', encoding='utf-8', newline='') as f:
     csv.writer(f).writerows([['' if v is None else v for v in r] for r in cm.iter_rows(values_only=True)])
 print('written')

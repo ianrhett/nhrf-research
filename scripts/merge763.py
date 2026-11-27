@@ -51,7 +51,7 @@ for r in range(tr+1,ms.max_row+1):
     v=ms.cell(r,1).value
     if v and 'verify column' in str(v) and 'verified_ocr' not in str(v):
         ms.cell(r,1,str(v)+' "verified_ocr" = matched against Tesseract OCR of an archival scan (1973 NEA, 1980 General Plan).')
-out=f'{S}/wb/NHRF_Commitments.xlsx'; wb.save(out)
+out=f'{S}/wb/NHRF_Recommendations.xlsx'; wb.save(out)
 from collections import Counter
 print('added',len(new),Counter(r[0] for r in new)); print('skipped',len(skipped))
 for s in skipped: print(' ',s)

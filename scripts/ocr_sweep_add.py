@@ -14,7 +14,7 @@ import openpyxl
 from copy import copy
 
 OCR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 NEA, GP = 'NEA_1973_Natural_Environmental_Analysis', 'General_Plan_1980_2000'
 FLOOD = 'Compare FOREST-FLOOD-CHECK.md: the 2026 hazard and 2024 climate plans do not act on existing forest.'
 BRIEF13 = 'Bears on the 2026 policy brief recommendation to compile runoff and landslide data.'
@@ -160,6 +160,6 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 print('written')

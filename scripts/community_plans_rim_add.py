@@ -11,7 +11,7 @@ import openpyxl
 from copy import copy
 
 PDF_DIR, CDIR = sys.argv[1:3]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 
 JOE, BEL, WN, BX = ('NashvilleNext_Vol3_Joelton_2017', 'NashvilleNext_Vol3_Bellevue_2017',
                     'NashvilleNext_Vol3_West_Nashville_2017', 'NashvilleNext_Vol3_Bordeaux_Whites_Creek_Haynes_Trinity')
@@ -208,7 +208,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)
 print('written')

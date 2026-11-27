@@ -4,7 +4,7 @@ Usage: python3 promise_groups_apply.py <commitments_dir> [--write]
 Each row of promise_groups.csv names a Commitments row (1-based, header is row 1) and must match that row's doc and
 pdf_page; promise_id must be P01-P19 and present in distinct_promises.csv, or 'context'; no row may appear twice.
 Dry run prints 'groups N bad [...]' and exits 1 on any problem. With --write, P1 is set to 'promise_id' and P is set on
-every data row (None when ungrouped), so re-running overwrites rather than shifts. Then commitments.csv is rewritten.
+every data row (None when ungrouped), so re-running overwrites rather than shifts. Then recommendation_statements.csv is rewritten.
 """
 import csv, re, sys
 from copy import copy
@@ -12,8 +12,8 @@ import openpyxl
 
 CDIR = sys.argv[1]
 WRITE = '--write' in sys.argv[2:]
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
-CSV = f'{CDIR}/commitments.csv'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
+CSV = f'{CDIR}/recommendation_statements.csv'
 
 wb = openpyxl.load_workbook(XLSX)
 ws = wb['Commitments']

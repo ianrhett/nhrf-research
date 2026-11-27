@@ -12,7 +12,7 @@ CDIR, PDFS, SDIR = sys.argv[1:4]
 rows = [r for r in csv.reader(open(f'{CDIR}/sources.csv', encoding='utf-8'))][1:]
 rows = [r for r in rows if r and r[0] not in ('Total',) and len(r) > 5 and r[5].startswith('http')]
 counts = {}
-for r in csv.DictReader(open(f'{CDIR}/commitments.csv', encoding='utf-8')):
+for r in csv.DictReader(open(f'{CDIR}/recommendation_statements.csv', encoding='utf-8')):
     counts[r['doc']] = counts.get(r['doc'], 0) + 1
 
 WEB_NOTE = {

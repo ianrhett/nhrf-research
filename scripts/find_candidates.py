@@ -52,7 +52,7 @@ def sentences(text):
             yield s
 
 existing = defaultdict(list)
-with open(f'{CDIR}/commitments.csv', encoding='utf-8') as f:
+with open(f'{CDIR}/recommendation_statements.csv', encoding='utf-8') as f:
     for r in csv.DictReader(f):
         existing[r['doc']].append(n(r['excerpt'].translate(Q)).lower())
 

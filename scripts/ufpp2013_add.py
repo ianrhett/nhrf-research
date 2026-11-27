@@ -12,7 +12,7 @@ ROOT = sys.argv[1]
 MD = f'{ROOT}/docs/research/UFPP-2013-FLOOD-PLAN.md'
 PDF = f'{ROOT}/docs/research/sources/UFPP_2013_Final_Report.pdf'
 CDIR = f'{ROOT}/docs/research/commitments'
-XLSX = f'{CDIR}/NHRF_Commitments.xlsx'
+XLSX = f'{CDIR}/NHRF_Recommendations.xlsx'
 
 blocks = re.findall(r'```csv\n(.*?)```', open(MD, encoding='utf-8').read(), re.S)
 commit, hr, src = (list(csv.reader(io.StringIO(b))) for b in blocks)
@@ -66,7 +66,7 @@ def dump(name, path, skip_blank):
         rows = [r for r in rows if any(x != '' for x in r)]
     with open(path, 'w', encoding='utf-8', newline='') as f:
         csv.writer(f).writerows(rows)
-dump('Commitments', f'{CDIR}/commitments.csv', False)
+dump('Commitments', f'{CDIR}/recommendation_statements.csv', False)
 dump('Highland Rim & named places', f'{CDIR}/highland_rim.csv', False)
 dump('Sources', f'{CDIR}/sources.csv', True)
 print('written; Total now =SUM(G2:G%d)' % total_r)

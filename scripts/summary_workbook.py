@@ -2,7 +2,7 @@
 
 Usage: python3 summary_workbook.py <commitments_dir>
 Writes <commitments_dir>/versions/NHRF_Promises_Summary_v<VERSION>_<DATE>.xlsx, where VERSION and DATE are the two
-fields of <commitments_dir>/VERSION. Refuses to overwrite an existing file. Reads sources.csv, commitments.csv,
+fields of <commitments_dir>/VERSION. Refuses to overwrite an existing file. Reads sources.csv, recommendation_statements.csv,
 promised_vs_delivered.csv, top5_timeline.csv, brief_rec_counts.csv, promise_counts.csv and promise_groups.csv (never the
 xlsx). Documents marked counted = 'no' on sources.csv are left out of every number and list, and named in a note on
 The Documents. All values are plain text and numbers, no formulas. Tabs: Start Here, The Scorecard, The Recommendations,
@@ -97,7 +97,7 @@ src = {d: r for d, r in allsrc.items() if r.get('counted') != 'no'}  # counted d
 background = [r for r in allsrc.values() if r.get('counted') == 'no']
 year = lambda d: int((re.search(r'(19|20)\d\d', allsrc[d]['date']) or re.search(r'(19|20)\d\d', d)).group(0))
 promises = {}
-for r in read('commitments.csv'):
+for r in read('recommendation_statements.csv'):
     if r['item_type'] in PROMISE_TYPES:
         promises[r['doc']] = promises.get(r['doc'], 0) + 1
 pairs = [p for p in read('promised_vs_delivered.csv') if p['pair'].isdigit() and p['promise_doc'] in src]
@@ -154,7 +154,7 @@ LINES = {
     17: ('Every Time They Said It: the exact quote each time, by recommendation.', 12, ''),
     18: ("Our Brief vs. Their Plans: the Alliance's 19 recommendations, and how often Metro already said the same thing.", 12, ''),
     19: ('The Documents: every plan we read, with a link to read it yourself.', 12, ''),
-    21: (f"Every quote is word for word from the Metro document and page shown. The full research workbook (NHRF_Commitments, version {VERSION}) has every detail, check and source note. Prepared by the Alliance to Conserve Nashville's Highland Rim Forest, {DATE}.", 11, 'g'),
+    21: (f"Every quote is word for word from the Metro document and page shown. The full research workbook (NHRF_Recommendations, version {VERSION}) has every detail, check and source note. Prepared by the Alliance to Conserve Nashville's Highland Rim Forest, {DATE}.", 11, 'g'),
 }
 for row, (text, size, style) in LINES.items():
     c = ws.cell(row, 1, text)
@@ -187,7 +187,7 @@ counts_out['The Recommendations'] = len(pc)
 # Tab 3b: Every Time They Said It
 ws = wb.create_sheet('Every Time They Said It')
 header(ws, ['Year', 'Plan', 'Page', 'What it says (exact quote)'], [8, 40, 8, 100])
-com = read('commitments.csv')
+com = read('recommendation_statements.csv')
 quotes = []
 for g in read('promise_groups.csv'):
     if g['promise_id'] in pc_by_id and g['doc'] in src:
