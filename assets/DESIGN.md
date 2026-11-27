@@ -19,6 +19,7 @@ A public record, set well. The page reads like an audited municipal document: pa
 | `--muted` | #5f5a4c | source lines and footnotes |
 | `--green` | #1b4332 | verified figures, the primary action |
 | `--signal` / `--signal-tint` | #a14a07 / #fbf1e6 | the Alliance's own ask (12,000 by 2040) and nothing else |
+| `--done` `--partly` `--miss` | #1b4332 #8a5c0a #b3261e | research status only (implemented, partly, none reported) |
 | `--night*` | ink-based | footer |
 
 Rule of meaning: green is the record, signal is the Alliance speaking for itself. A verified figure is never signal; the ask is never green.
