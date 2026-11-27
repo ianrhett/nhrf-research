@@ -1,0 +1,217 @@
+row_ordinal,csv_line,promise_id,doc,document,pdf_page,item_type,metric
+32,34,P14,Hazard_Mitigation_Plan_2026_Final,Hazard_Mitigation_Plan_2026_Final,222,commitment,Canopy assessment frequency; tree bank management
+45,47,P14,Hazard_Mitigation_Plan_2026_Final,Hazard_Mitigation_Plan_2026_Final,264,recommendation,Re-align HMP with Urban Tree Canopy Assessment and other plans (Action 2-9)
+66,68,P09,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,27,target,Additional park land needed (all types)
+67,69,P09,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,27,target,Recommended total park level of service
+68,70,P09,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,27,target,Additional regional park acres needed
+70,72,P13,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,40,recommendation,Implement a Natural Area Management Plan
+83,85,P08,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,167,commitment,Goal objective: acquire natural areas
+85,87,P13,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,177,recommendation,Regional park site selection: preserve natural resources
+86,88,P08,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,178,recommendation,Continue acquiring/protecting large natural areas; rural and forested land
+91,93,P08,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,185,recommendation,Acquire land adjacent to existing parks for habitat protection (per 2011 Open Space Plan)
+92,94,P08,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,194,recommendation,Long-distance trails via land acquisition and easements in Highland Rim
+93,95,P13,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,227,recommendation,Integrate natural area management principles in maintenance
+97,99,P13,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,230,recommendation,Natural area management needed for two new regional parks
+102,104,P09,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,234,funding_estimate,Market value to acquire regional park acres
+112,114,P13,Plan_to_Play_2017_Full_Plan,Plan_to_Play_2017_Full_Plan,423,commitment,Individual NRM plan for each designated natural area
+123,125,P19,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,131,commitment,Goal III: Protect and preserve nature for future generations
+127,129,P19,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,134,target,KPI: Acres of publicly accessible green space
+139,141,P07,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,204,recommendation,"NE1 Increase green spaces, tree canopy, and conservation (incl. NashvilleNext NR 1.4)"
+142,144,P07,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,205,target,NE1 target outcome: increase green space and tree cover
+147,149,P15,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,210,recommendation,NE7 prohibit or remove invasive species
+420,422,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,8,recommendation,Preserve and expand existing tree canopy including larger tracts of forested lands
+440,442,P14,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,27,commitment,Goal 3: establish and implement tree density (canopy target percentage) goals
+443,445,P06,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,30,commitment,Review and update landscape codes as needed or every five years
+444,446,P06,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,30,recommendation,Develop landscape ordinance with tree protection for healthy mature existing trees
+452,454,P15,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,34,recommendation,Develop plan of action for invasive pest outbreaks (Emerald Ash Borer)
+453,455,P14,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,39,commitment,Incorporate urban forest canopy goals into 2016 Comprehensive Parks Master Plan update
+457,459,P01,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,39,recommendation,Change slope provision in Metro ordinance restricting development from 15% to 20%
+458,460,P08,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,40,recommendation,Accelerate purchase of open space and conservation of natural areas
+459,461,P11,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,40,commitment,Promote conservation easements on remaining open land with Tennessee Land Trust
+460,462,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,40,commitment,Identify Greenbelt properties and encourage forestry management plans
+464,466,P06,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,41,recommendation,"Codes Dept dedicated landscape ordinance inspectors: current 0, desired 2"
+466,468,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,46,target,"Urban Tree Canopy target goal, T1 Natural transect"
+467,469,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,46,target,"Urban Tree Canopy target goal, T2 Rural transect"
+472,474,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,46,recommendation,Subarea 1 Joelton priority: preserve existing undisturbed canopy
+476,478,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,48,recommendation,Subarea 3 Bordeaux-Whites Creek priority: preserve existing undisturbed canopy
+480,482,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,49,target,Subarea 4 Madison T2 Rural canopy target
+483,485,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,49,target,Subarea 4 Madison T1 Natural canopy target
+485,487,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,50,target,Subarea 5 T1 Natural canopy target
+492,494,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,52,target,Subarea 7 West Nashville T1 Natural canopy target
+507,509,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,57,target,Subarea 12 Southeast T1 Natural canopy target
+508,510,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,57,target,Subarea 12 Southeast T2 Rural canopy target
+516,518,P07,Urban_Forestry_Landscape_Master_Plan_2016,Urban_Forestry_Landscape_Master_Plan_2016,59,target,Subarea 14 Donelson-Hermitage T2 Rural canopy target
+571,573,P05,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,9,recommendation,"Sensitive-site development techniques (clustering, stream buffers, limit clearing)"
+583,585,P09,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,16,target,"Conservation/parkland acres: 2011 baseline, 2015 status, 2021 target"
+587,589,P09,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,18,target,Acquire additional parkland (Open Space Plan)
+599,601,P01,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,30,recommendation,"Limit development on steep slopes, unstable soils and floodplains"
+601,603,P18,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,32,commitment,System of public and private parks and preserves for hazard mitigation
+604,606,P19,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,35,target,NR goal 1: invest in and increase natural environment
+606,608,P07,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,35,commitment,NR policy 1.4: preserve and expand tree canopy incl. larger tracts of forested lands
+608,610,P04,NashvilleNext_Vol2_Natural_Resources_Hazard_Adaptation,NashvilleNext,35,commitment,NR policy 1.5: infrastructure choices to reduce sprawl and preserve open space
+647,649,P14,Urban_Tree_Canopy_Assessment_2023,Urban_Tree_Canopy_Assessment_2023,28,recommendation,Use this assessment to establish new short- and long-term canopy cover goals
+658,660,P06,Urban_Tree_Canopy_Assessment_2023,Urban_Tree_Canopy_Assessment_2023,29,recommendation,Evaluate municipal codes to increase tree preservation during development
+664,666,P08,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,9,recommendation,Northwest open space anchor: Beaman Park to Bells Bend Park
+665,667,P08,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,9,recommendation,"Southwest open space anchor: Warner Parks, West Meade and Forest Hills forests, Radnor Lake"
+666,668,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,"New Metro parkland, first 10 years"
+667,669,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,"Additional Metro parkland, second phase"
+668,670,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,"Privately conserved green infrastructure, first 10 years"
+669,671,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,"Privately conserved green infrastructure, second phase"
+670,672,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,Floodplain and sensitive natural areas protected via planning tools
+671,673,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,11,target,"Of the 22,000 acres, land protected for sustainable agriculture"
+685,687,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,17,target,Total new conserved open space by 2035
+693,695,P08,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,30,recommendation,Designate Metro department and individual for strategic acquisitions and 'Surplus to Open Space' program
+694,696,P14,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,30,commitment,Full-time Metro urban forestry staff person
+697,699,P15,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,30,recommendation,"Mill Creek watershed overlay, variable 100-foot buffer"
+698,700,P15,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,30,recommendation,Mitigate all county wetland impacts within the county
+699,701,P04,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,31,recommendation,Agricultural overlay district for Bells Bend and Pennington Bend
+700,702,P09,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,31,target,No Net Loss of Open Space policy for Metro Park lands
+701,703,P05,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,31,target,Conservation subdivision by right ordinance
+702,704,P10,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,31,recommendation,Metro Open Space Fund balance (2011)
+707,709,P11,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,31,recommendation,Transfer of Development Rights program
+709,711,P11,Nashville_Open_Space_Plan_2011,Nashville_Open_Space_Plan_2011,32,recommendation,"Protect iconic landscapes via acquisition, easements, historic districts"
+714,716,P09,Plan_to_Play_2026_Appendix,Plan_to_Play_2026,478,target,2017 recommendation: expand park and greenway land
+751,753,P09,Plan_to_Play_2026_Update,Plan_to_Play_2026,107,target,Tier One new land acquisition 2027-2031
+752,754,P13,Plan_to_Play_2026_Update,Plan_to_Play_2026,108,commitment,Tier One: set target % of park acreage as designated natural area
+753,755,P13,Plan_to_Play_2026_Update,Plan_to_Play_2026,109,commitment,Tier One: engage Metro Planning on Conservation Strategy
+754,756,P09,Plan_to_Play_2026_Update,Plan_to_Play_2026,122,target,Tier Two new land acquisition (hold LOS)
+756,758,P09,Plan_to_Play_2026_Update,Plan_to_Play_2026,133,target,Tier Three new land acquisition (2017 goal as corrected)
+765,767,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,22,recommendation,Highland Rim worthy of strong conservation and preservation policies
+776,778,P01,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,73,recommendation,Steep areas of 20 percent slope or greater left natural
+777,779,P01,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,73,recommendation,Areas subject to gravity movement kept natural
+781,783,P03,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,98,recommendation,Rim hill development to be planned with soil data
+787,789,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,106,recommendation,Oak-Hickory on Rim hilltops among most prized vegetation
+789,791,P07,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,111,recommendation,Protecting woodlands cannot be overemphasized
+792,794,P18,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,121,recommendation,"Urgent to identify, preserve and sustain landscape resources"
+794,796,P01,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,124,recommendation,Corridor slopes protected and stabilized
+797,799,P18,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,131,recommendation,Unique areas objects of concentrated preservation efforts
+798,800,P08,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,132,recommendation,Rim escarpment lakes as future parkland
+799,801,P08,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,132,recommendation,Named escarpment lakes worthy of parkland consideration
+801,803,P15,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,132,recommendation,Cedar Glades preserved for future study
+809,811,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,137,recommendation,Escarpment better left generally in natural state
+812,814,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,137,recommendation,Scenic value justifies protecting Rim corridors
+813,815,P05,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,137,recommendation,Cluster development with natural common open space on escarpment
+816,818,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,139,recommendation,Escarpment hill area lots 3-5 acres
+818,820,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,139,recommendation,Joelton ridgetop lots average 3 acres
+819,821,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,140,recommendation,Central Basin wooded slopes 15-20 percent left undisturbed
+820,822,P05,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,140,recommendation,PUD zoning needed for escarpment cluster development
+824,826,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,141,recommendation,Any area with slopes over 20 percent warrants scrutiny
+827,829,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,144,recommendation,Western conservation areas merit careful conservation
+836,838,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,149,recommendation,Identify and preserve Front Range hill sections and vistas
+838,840,P08,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,150,recommendation,Regulation and purchase of property as principal tools
+839,841,P05,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,150,recommendation,Planned unit development to cluster and keep open area natural
+843,845,P02,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,151,recommendation,Equitable means of preserving hills around urban community
+857,859,P16,General_Plan_1980_2000,General_Plan_1980_2000,56,commitment,Preservation of scenic and natural amenities as plan emphasis
+861,863,P04,General_Plan_1980_2000,General_Plan_1980_2000,61,recommendation,Economic activities kept out of environmentally sensitive areas
+862,864,P01,General_Plan_1980_2000,General_Plan_1980_2000,63,recommendation,Strict control of construction on slopes over 20 percent
+863,865,P01,General_Plan_1980_2000,General_Plan_1980_2000,63,recommendation,Strict regulation on unstable soils and geologic formations
+864,866,P01,General_Plan_1980_2000,General_Plan_1980_2000,64,recommendation,Rugged Topographic Areas limited to suitable ridges and valleys
+866,868,P08,General_Plan_1980_2000,General_Plan_1980_2000,64,recommendation,Program to designate and purchase natural areas; open space system
+876,878,P01,General_Plan_1980_2000,General_Plan_1980_2000,161,recommendation,Land with excessive slopes not used for economic development
+879,881,P03,General_Plan_1980_2000,General_Plan_1980_2000,191,recommendation,No upgrading of water lines in Conservation-Nonurban areas
+880,882,P03,General_Plan_1980_2000,General_Plan_1980_2000,197,recommendation,Sewers discouraged in rugged topography (CN areas)
+889,891,P19,General_Plan_1980_2000,General_Plan_1980_2000,255,commitment,Chapter Seven: preserve and manage scenic and natural landscape
+892,894,P01,General_Plan_1980_2000,General_Plan_1980_2000,256,recommendation,Preserve vegetation on hillsides
+893,895,P01,General_Plan_1980_2000,General_Plan_1980_2000,260,recommendation,Prevent development where hazardous geologic formations occur
+897,899,P02,General_Plan_1980_2000,General_Plan_1980_2000,260,commitment,"Most RTA designated Conservation-Nonurban, low intensity uses"
+898,900,P01,General_Plan_1980_2000,General_Plan_1980_2000,261,recommendation,Development on slopes over 20 percent strictly controlled; septic discouraged
+901,903,P04,General_Plan_1980_2000,General_Plan_1980_2000,263,recommendation,CN residential limited to low density semirural pattern
+903,905,P03,General_Plan_1980_2000,General_Plan_1980_2000,264,recommendation,Joelton to Whites Creek utilities: only low density semirural
+909,911,P18,General_Plan_1980_2000,General_Plan_1980_2000,275,recommendation,Create viable open space system from remaining scenic corridors
+912,914,P02,General_Plan_1980_2000,General_Plan_1980_2000,276,commitment,Careful staff review of non low density development on the Rim
+919,921,P02,General_Plan_1980_2000,General_Plan_1980_2000,279,recommendation,Highland Rim Escarpment: natural features of rugged areas preserved
+920,922,P16,General_Plan_1980_2000,General_Plan_1980_2000,279,recommendation,Identify hill sections with greatest visual impact; protect vistas
+923,925,P08,General_Plan_1980_2000,General_Plan_1980_2000,280,recommendation,Acquire selected natural corridor areas; purchase natural areas
+924,926,P13,General_Plan_1980_2000,General_Plan_1980_2000,280,recommendation,Natural areas limited to low intensity uses like hiking
+927,929,P17,General_Plan_1980_2000,General_Plan_1980_2000,281,recommendation,Preserve mature vegetation; replace ground cover
+930,932,P16,General_Plan_1980_2000,General_Plan_1980_2000,285,recommendation,"Scenic arterial setbacks encourage trees, discourage clearing"
+931,933,P16,General_Plan_1980_2000,General_Plan_1980_2000,285,recommendation,Scenic easements along arterials to keep key vistas
+932,934,P17,General_Plan_1980_2000,General_Plan_1980_2000,286,recommendation,Identify notable trees; protect from land use intensification
+990,992,P14,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,15,commitment,Urban Forestry Program mission to preserve canopy
+998,1000,P15,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,16,recommendation,Warner Parks stream segments identified for mitigation
+1006,1008,P04,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,18,recommendation,Sustain sensitive environmental and rural lands
+1009,1011,P07,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,18,recommendation,Preserve existing tree canopy including forested tracts
+1014,1016,P18,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,19,commitment,Identify properties for open space network with Land Trust
+1024,1026,P15,MS4_Annual_Report_FY19,MS4_Annual_Report_FY19,120,commitment,Protect all of Nashville's aquatic habitat approach
+1063,1065,P07,Tree_Canopy_Assessment_2010,Tree_Canopy_Assessment_2010,19,recommendation,Preserve canopy where high; enhance where low
+1064,1066,P06,Tree_Canopy_Assessment_2010,Tree_Canopy_Assessment_2010,19,recommendation,Partnerships and enforcement or strengthening of tree ordinances
+1073,1075,P14,Tree_Canopy_Assessment_2010,Tree_Canopy_Assessment_2010,20,recommendation,Repeat canopy assessment in 5 to 8 years
+1074,1076,P14,Tree_Canopy_Assessment_2010,Tree_Canopy_Assessment_2010,20,recommendation,Run i-Tree Eco or CITYgreen benefits analysis
+1086,1088,P13,Plan_to_Play_2026_Update,Plan_to_Play_2026,49,recommendation,DNA target percentage deferred
+1087,1089,P09,Plan_to_Play_2026_Update,Plan_to_Play_2026,112,target,Tier One new land acquisition
+1108,1110,P11,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,8,recommendation,"CO: easements, land trusts, TDR encouraged"
+1115,1117,P05,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,9,recommendation,CO: cluster development to preserve features
+1116,1118,P17,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,9,recommendation,CO: site vegetation and topography guide building location
+1118,1120,P05,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,9,recommendation,CO in T2: grouped homes surrounded by open space
+1121,1123,P06,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,10,recommendation,CO infill tool: increase tree preservation on constrained sites
+1122,1124,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,10,recommendation,"CO access: minimal grading, driveways parallel to slope"
+1132,1134,P11,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,12,recommendation,"Rare species habitat left undisturbed via easements, TDR"
+1136,1138,P05,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,12,recommendation,"Build on slopes under 20%, leave steep slopes as open space"
+1137,1139,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,12,recommendation,Isolated level areas reached via steep slopes kept low intensity
+1138,1140,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,12,recommendation,Development potential tied to preserving mature tree stands on slopes
+1140,1142,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,12,recommendation,Follow existing contours on steep slopes and unstable soils
+1145,1147,P11,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,13,recommendation,"Problem soils left undisturbed via easements, TDR"
+1147,1149,P11,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,13,recommendation,Development discouraged in some CO areas; easements and TDR encouraged
+1149,1151,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,13,recommendation,Preserve existing vegetation on slopes and ridgelines
+1150,1152,P01,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,14,recommendation,T2 agriculture in CO should minimize vegetation removal on slopes
+1161,1163,P17,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,19,recommendation,T2 OS landscaping uses existing native vegetation
+1162,1164,P17,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,19,recommendation,T2 OS parking avoids sensitive features
+1164,1166,P17,NashvilleNext_Vol3_CCM_CI_CO_OS_T_2017,NashvilleNext,21,recommendation,"T2 OS internal roads preserve topography, waterways, views"
+1172,1174,P16,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,2,recommendation,T2 purpose: protect existing vegetation along roadways
+1173,1175,P18,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,2,recommendation,T2 purpose: open space for watershed protection
+1174,1176,P04,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,2,commitment,"T2 purpose: preserve woodlands, slopes, habitat in perpetuity"
+1176,1178,P17,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,2,recommendation,T2 purpose: minimize vegetation removal during construction
+1179,1181,P05,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,3,recommendation,T2 clustered homes via Rural Subdivision Regulations
+1182,1184,P03,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,9,recommendation,T2-RA: no subdivisions requiring new roads or sewer
+1183,1185,P01,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,9,recommendation,T2-RA: sensitive design for watershed health
+1186,1188,P04,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,10,recommendation,T2-RA: building siting protects farmland and sensitive features
+1193,1195,P04,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,14,recommendation,T2-RCS: siting protects viewsheds and features
+1196,1198,P04,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,18,target,"T2-RM: Rural Character Subdivisions, 1 unit per 2 acres, preserved open space"
+1198,1200,P05,NashvilleNext_Vol3_CCM_T2_Rural_2017,NashvilleNext,18,recommendation,T2-RM: Rural Character Subdivision designs with Planning
+1220,1222,P03,NashvilleNext_Vol4_Actions,NashvilleNext,49,recommendation,BE 1.1 #323 apply new Rural CCM policies; discourage sewer expansion
+1226,1228,P11,NashvilleNext_Vol4_Actions,NashvilleNext,51,recommendation,BE 2.2 #74 encourage conservation easements
+1230,1232,P19,NashvilleNext_Vol4_Actions,NashvilleNext,69,commitment,NR 1 goal: invest in and increase natural environment
+1236,1238,P01,NashvilleNext_Vol4_Actions,NashvilleNext,69,target,NR 1.1 #210 hillside regulations above 15% slopes
+1247,1249,P08,NashvilleNext_Vol4_Actions,NashvilleNext,71,recommendation,NR 1.2 #119 define ecologically valuable lands; in-lieu fee land bank
+1251,1253,P04,NashvilleNext_Vol4_Actions,NashvilleNext,71,recommendation,NR 1.3 #141 preserve prime farmland; agricultural zoning category
+1252,1254,P07,NashvilleNext_Vol4_Actions,NashvilleNext,72,commitment,NR 1.4 policy: preserve and expand canopy incl. forested tracts
+1253,1255,P06,NashvilleNext_Vol4_Actions,NashvilleNext,72,recommendation,"NR 1.4 #201 Urban Forestry Plan, tree ordinance, preservation policy"
+1255,1257,P05,NashvilleNext_Vol4_Actions,NashvilleNext,72,target,"NR 1.4 #182 conservation subdivision ordinance, 50% open space"
+1256,1258,P05,NashvilleNext_Vol4_Actions,NashvilleNext,72,target,"NR 1.4 #174 cluster lot subdivisions, 33% preserved land"
+1257,1259,P04,NashvilleNext_Vol4_Actions,NashvilleNext,72,commitment,"NR 1.5 policy: reduce sprawl, preserve open space"
+1290,1292,P12,NashvilleNext_Vol4_Actions,NashvilleNext,78,recommendation,NR 4.1 #148 regional land conservation for upstream watersheds
+1295,1297,P03,NashvilleNext_Vol4_Actions,NashvilleNext,79,recommendation,NR 4.2 #323 apply new Rural CCM policies; discourage sewer expansion
+1334,1336,P07,Climate_Adaptation_Resilience_Plan_2024_Final,Climate_Adaptation_Resilience_Plan_2024_Final,204,recommendation,NE1 canopy and conservation land credited with watershed and floodplain benefits
+1365,1367,P01,NashvilleNext_Vol3_Joelton_2017,NashvilleNext,16,recommendation,"Conservation policy on Joelton floodplains, floodways and steep slopes"
+1376,1378,P18,NashvilleNext_Vol3_Bellevue_2017,NashvilleNext,22,recommendation,Conservation policy on all sensitive features after the 2010 flood (Bellevue)
+1383,1385,P01,NashvilleNext_Vol3_West_Nashville_2017,NashvilleNext,30,recommendation,Hillwood Country Club redevelopment: protected open space for slopes and mature vegetation
+1384,1386,P01,NashvilleNext_Vol3_West_Nashville_2017,NashvilleNext,31,recommendation,Knob Hill redevelopment: protected open space for slopes and mature vegetation
+1409,1411,P19,NashvilleNext_Vol1_ABCD_Intro_2017,NashvilleNext,22,commitment,"Plans to protect natural resources, farmland and outdoor spaces"
+1412,1414,P01,NashvilleNext_Vol1_ABCD_Intro_2017,NashvilleNext,25,commitment,Reduce development on steep slopes and floodplains
+1415,1417,P03,NashvilleNext_Vol1_F_Guiding_Principles_2017,NashvilleNext,10,commitment,Direct sewer to suburban and urban areas to keep rural areas rural
+1428,1430,P03,NashvilleNext_Vol2_Land_Use_Transportation_Infrastructure,NashvilleNext,58,commitment,Limit sewer access in rural areas
+1430,1432,P03,NashvilleNext_Vol2_Land_Use_Transportation_Infrastructure,NashvilleNext,60,commitment,LUTI 9.4: limit sewer extensions into T2 Rural areas
+1436,1438,P01,NashvilleNext_Vol3_CCM_Intro_2017,NashvilleNext,54,recommendation,Sustainable sites avoid steep slopes and large stands of mature trees
+1437,1439,P11,NashvilleNext_Vol3_CCM_Intro_2017,NashvilleNext,55,recommendation,Protect sensitive features permanently with easements or development rights transfer
+1438,1440,P07,NashvilleNext_Vol3_CCM_T1_Natural_2017,NashvilleNext,5,commitment,T1 Natural intent: keep undisturbed open space undeveloped
+1441,1443,P17,NashvilleNext_Vol3_CCM_T3_Suburban_2017,NashvilleNext,1,recommendation,Suburban development keeps existing vegetation and land forms
+1443,1445,P06,NashvilleNext_Vol3_CCM_T3_Suburban_2017,NashvilleNext,18,recommendation,Retain clusters of mature trees in suburban neighborhoods
+1453,1455,P03,Hazard_Mitigation_Plan_2026_Final,Hazard_Mitigation_Plan_2026_Final,175,commitment,Grow in centers so sewer expansion is discouraged and slopes spared
+1491,1493,P05,NEA_1973_Natural_Environmental_Analysis,NEA_1973_Natural_Environmental_Analysis,138,recommendation,Cluster development must not harm surrounding natural area
+1499,1501,P03,General_Plan_1980_2000,General_Plan_1980_2000,89,recommendation,Sewer extension to low-density areas paid partly by those served
+1501,1503,P03,General_Plan_1980_2000,General_Plan_1980_2000,197,commitment,Public sewers required only where urban development is planned
+1511,1513,P01,General_Plan_1980_2000,General_Plan_1980_2000,263,commitment,Prevent development on unstable soils and hazardous formations
+1512,1514,P03,General_Plan_1980_2000,General_Plan_1980_2000,263,commitment,Conservation-Nonurban development only with wells or water and on-site disposal
+1514,1516,P05,General_Plan_1980_2000,General_Plan_1980_2000,264,recommendation,Use planned unit development to cluster and preserve the natural environment
+1519,1521,P19,General_Plan_1980_2000,General_Plan_1980_2000,275,commitment,A policy framework needed to preserve the natural landscape
+1526,1528,P08,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,20,recommendation,Preserve floodplain and other land for a greenbelt linking open spaces
+1529,1531,P03,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,29,commitment,Sewers drive density; extend them with care
+1530,1532,P02,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,39,recommendation,Conserve hills and other unique landscape features
+1533,1535,P01,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,40,commitment,Rugged terrain: low intensity or open space
+1534,1536,P01,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,40,commitment,Strictly control development on rugged terrain (Goal 1)
+1535,1537,P05,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,40,recommendation,Use clustering or transfer of development rights on rugged terrain
+1537,1539,P01,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,42,commitment,Conserve rugged terrain as open space where development would degrade it (Goal 2)
+1538,1540,P08,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,42,recommendation,Identify land for open space conservation and secure it for public use
+1540,1542,P15,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,45,recommendation,Protect the Cedar Glades from development
+1544,1546,P06,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,45,commitment,Protect mature vegetation; require replanting when removed (Goal 1)
+1546,1548,P04,Concept_2010_General_Plan_1992,Concept_2010_General_Plan_1992,47,commitment,Protect rural areas from untimely development

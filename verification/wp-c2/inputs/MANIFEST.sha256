@@ -1,0 +1,12 @@
+# Inputs to scripts/compare_wpc2.py, copied byte-for-byte from the PR heads below.
+# Verify with: cd verification/wp-c2/inputs && shasum -a 256 -c MANIFEST.sha256
+# selected-216-ids.csv        <- PR #7  head addf1c0ffd4b83de124dcc4a854e09bd826a0676 verification/selected-216-ids.csv
+# fable-evidence-ledger.csv   <- PR #9  head f48b0a71b89bf9ce2649fbe4c61221612a7d52e2 fable/evidence-ledger.csv
+# claude2-evidence-ledger.csv <- PR #11 head 7bbed27e9c62f3c945a47ec031a881b27bdba930 verification/claude2-review/evidence-ledger.csv
+# wpc1-model-comparison.csv   <- PR #10 head 2bbeb43fd2980a0335115bf005367291930e84b0 verification/wp-c/model-comparison.csv
+# Corpus: data/recommendation_statements.csv on main is byte-identical to data/commitments.csv
+# at frozen corpus 4b67bb8f72a5b39a6b146b85a5d2893aa23fa636 (sha256 88730a0ceeb6338a29db65624e950f6d7dcc3101a3b63ec51ce683f8703b3b4c).
+f20fa899669706a984eedf459250b31f0dea9e3d08d4bfc22791167e14b7c207  claude2-evidence-ledger.csv
+dc3de2c81097b536b298f546be0e0258b367f002cd858a447902b5ebcd0a38cd  fable-evidence-ledger.csv
+7fc0ac164da485e93ac5cda04ac3dee5f28c956fb30ab2dc6261c7df4acb5d28  selected-216-ids.csv
+88a312f00c36590e90c56ea84f642d874e04a4e8144cae6b29d64c32d867f5b2  wpc1-model-comparison.csv
