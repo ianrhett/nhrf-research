@@ -1,0 +1,63 @@
+{
+  "corpus_sha256": "88730a0ceeb6338a29db65624e950f6d7dcc3101a3b63ec51ce683f8703b3b4c",
+  "baseline_ids": 216,
+  "joined_rows": 216,
+  "integrity_problems": [],
+  "fable_disposition": {
+    "accept": 214,
+    "reject": 2
+  },
+  "claude2_disposition": {
+    "accept": 214,
+    "reassign": 2
+  },
+  "fable_original_checked": {
+    "yes": 216
+  },
+  "claude2_original_checked": {
+    "yes": 216
+  },
+  "fable_confidence": {
+    "high": 158,
+    "med": 58
+  },
+  "claude2_confidence": {
+    "high": 205,
+    "low": 1,
+    "med": 10
+  },
+  "disposition_agree": 212,
+  "both_accept": 212,
+  "type_agree": 215,
+  "group_agree": 215,
+  "non_accept_fable": [
+    "102",
+    "1220"
+  ],
+  "non_accept_claude2": [
+    "998",
+    "1526"
+  ],
+  "duplicate_comparison": {
+    "": 196,
+    "claude2-only": 6,
+    "fable-only": 10,
+    "same-cluster": 4
+  },
+  "fable_quote_band": {
+    "shows": 216
+  },
+  "claude2_quote_band": {
+    "absent": 84,
+    "partial": 35,
+    "shows": 97
+  },
+  "both_quotes_absent": [],
+  "severity": {
+    "": 88,
+    "1-high": 2,
+    "2-med": 96,
+    "3-low": 30
+  },
+  "queue_rows": 128
+}
