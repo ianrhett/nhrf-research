@@ -51,13 +51,13 @@ steps=[("32","documents","We gathered Metro's documents","Adopted plans, studies
 ("1 of 19","fully implemented","We scored each recommendation","1 fully implemented, 15 carried out in part, 3 with no implementation reported.")]
 W=640;H=74*6+10;svg=[f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="Six steps from 32 documents to 1 of 19 recommendations fully implemented">']
 for i,(n,u,t,d) in enumerate(steps):
-    y=8+i*74; w=W-i*52; x=(W-w)/2; fill="#1f4d36" if i<5 else "#b3261e"
+    y=8+i*74; w=W-i*52; x=(W-w)/2; fill="#1b4332" if i<5 else "#b3261e"
     op=1-i*0.1 if i<5 else 1
     svg.append(f'<rect x="{x:.0f}" y="{y}" width="{w:.0f}" height="62" rx="6" fill="{fill}" fill-opacity="{op:.2f}"/>')
-    svg.append(f'<text x="{x+16:.0f}" y="{y+40}" font-size="27" font-weight="700" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">{html.escape(n)}</text>')
+    svg.append(f'<text x="{x+16:.0f}" y="{y+40}" font-size="27" font-weight="700" fill="#fff" font-family="Public Sans,Helvetica,Arial,sans-serif">{html.escape(n)}</text>')
     tx=x+16+ (len(n)*16+18)
-    svg.append(f'<text x="{tx:.0f}" y="{y+25}" font-size="13" font-weight="700" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">{i+1}. {html.escape(t)}</text>')
-    svg.append(f'<text x="{tx:.0f}" y="{y+45}" font-size="11" fill="#e7efe9" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">{html.escape(u)}</text>')
+    svg.append(f'<text x="{tx:.0f}" y="{y+25}" font-size="13" font-weight="700" fill="#fff" font-family="Public Sans,Helvetica,Arial,sans-serif">{i+1}. {html.escape(t)}</text>')
+    svg.append(f'<text x="{tx:.0f}" y="{y+45}" font-size="11" fill="#e7efe9" font-family="Public Sans,Helvetica,Arial,sans-serif">{html.escape(u)}</text>')
 svg.append('</svg>')
 desc="".join(f'<li><b>{i+1}. {html.escape(t)}.</b> {html.escape(d)}</li>' for i,(n,u,t,d) in enumerate(steps))
 tpl=open(os.path.join(D,'methodology.tmpl.html')).read()

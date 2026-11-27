@@ -38,33 +38,33 @@ LBL = {'P01': ('Keep building off steep slopes', '15% rule only for rural subdiv
        'P18': ('Connect protected natural areas', 'Piece by piece; no mapped system'),
        'P19': ('Broad goals for the natural environment', 'No measurable target')}
 SHORT = {'Implemented': 'Implemented', 'Not implemented': 'Not implemented', 'Partly implemented': 'Partly', 'No implementation reported': 'No report'}
-COL = {'Implemented': '#1f4d36', 'Not implemented': '#b3261e', 'Partly implemented': '#a35f00', 'No implementation reported': '#6b6b6b'}
+COL = {'Implemented': '#1b4332', 'Not implemented': '#b3261e', 'Partly implemented': '#8a5c0a', 'No implementation reported': '#5f5a4c'}
 cnt = Counter((g['promise_id'], year(g['doc'])) for g in groups)
 tot = Counter(g['promise_id'] for g in groups)
 W, X0, X1, ROWH, TOP = 970, 240, 520, 22, 22  # v1.7.3: 960 to 970 so the longer P10 note fits inside the chart; the chart draws about 1% smaller
 x = lambda yr: X0 + (yr - 1973) / (2026 - 1973) * (X1 - X0)
 ids = [p for p in sorted(dp) if int(p[1:]) <= 19]
 H = TOP + ROWH * len(ids) + 22
-s = [f'<svg viewBox="0 0 {W} {H}" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">']
+s = [f'<svg viewBox="0 0 {W} {H}" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="Public Sans, Helvetica, Arial, sans-serif">']
 for yr in (1973, 1981, 1992, 2009, 2017, 2026):
-    s.append(f'<line x1="{x(yr):.1f}" y1="{TOP-6}" x2="{x(yr):.1f}" y2="{H-22}" stroke="#e3e7e4"/>')
-    s.append(f'<text x="{x(yr):.1f}" y="{H-7}" font-size="10" fill="#6b6b6b" text-anchor="middle">{yr}</text>')
-s.append(f'<text x="{X1+26}" y="{TOP-10}" font-size="9" fill="#6b6b6b" letter-spacing="0.6">TIMES · DONE?</text>')
+    s.append(f'<line x1="{x(yr):.1f}" y1="{TOP-6}" x2="{x(yr):.1f}" y2="{H-22}" stroke="#e4e0d6"/>')
+    s.append(f'<text x="{x(yr):.1f}" y="{H-7}" font-size="10" fill="#5f5a4c" text-anchor="middle">{yr}</text>')
+s.append(f'<text x="{X1+26}" y="{TOP-10}" font-size="9" fill="#5f5a4c" >Times, done?</text>')
 for i, pid in enumerate(ids):
     cy = TOP + ROWH * i + ROWH / 2
     if i:
-        s.append(f'<line x1="0" y1="{cy-ROWH/2:.1f}" x2="{W}" y2="{cy-ROWH/2:.1f}" stroke="#eef0ee"/>')
+        s.append(f'<line x1="0" y1="{cy-ROWH/2:.1f}" x2="{W}" y2="{cy-ROWH/2:.1f}" stroke="#f1efe8"/>')
     label, note = LBL[pid]
     st = dp[pid]['status']
-    s.append(f'<text x="0" y="{cy+4:.1f}" font-size="13" fill="#1a1a1a">{label}</text>')
+    s.append(f'<text x="0" y="{cy+4:.1f}" font-size="13" fill="#14213d">{label}</text>')
     yrs = [y for (p, y) in cnt if p == pid]
     if yrs:  # a recommendation with no counted statement has no baseline or dots
         s.append(f'<line x1="{x(min(yrs)):.1f}" y1="{cy:.1f}" x2="{X1}" y2="{cy:.1f}" stroke="#a9c7b3" stroke-width="1"/>')
     for (p, yr), n in sorted(cnt.items()):
         if p == pid:
-            s.append(f'<circle cx="{x(yr):.1f}" cy="{cy:.1f}" r="{2.2 + 1.9 * math.sqrt(n):.1f}" fill="#1f4d36" fill-opacity="0.82"/>')
-    s.append(f'<text x="{X1+44}" y="{cy+5:.1f}" font-size="15" font-weight="700" fill="#1f4d36" text-anchor="end">{tot[pid]}</text>')
-    s.append(f'<text x="{X1+56}" y="{cy+4:.1f}" font-size="11.5" fill="#555"><tspan font-weight="700" fill="{COL[st]}">{SHORT[st]}</tspan>  {note}</text>')
+            s.append(f'<circle cx="{x(yr):.1f}" cy="{cy:.1f}" r="{2.2 + 1.9 * math.sqrt(n):.1f}" fill="#1b4332" fill-opacity="0.82"/>')
+    s.append(f'<text x="{X1+44}" y="{cy+5:.1f}" font-size="15" font-weight="700" fill="#1b4332" text-anchor="end">{tot[pid]}</text>')
+    s.append(f'<text x="{X1+56}" y="{cy+4:.1f}" font-size="11.5" fill="#5f5a4c"><tspan font-weight="700" fill="{COL[st]}">{SHORT[st]}</tspan>  {note}</text>')
 s.append('</svg>')
 
 # "The documents" (v1.7.0, NHRF-DOCLIST-001): the counted documents with forest recommendations (FACTS.md D2), one line each,
@@ -101,9 +101,9 @@ for f, r in src.items():
         doc_year[document(f)] = min(doc_year.get(document(f), 9999), year(f))
 listed = sorted(docs, key=lambda d: (doc_year[d], NAME[d]))
 DOCS_PT, DOCS_LH = 6, 1.1  # this section only: 6pt is the largest size that keeps the PDF to one page (7pt overflows by 19px); nothing else on the page was resized
-docs_html = [f'<p id="docs" style="font-size:{DOCS_PT}pt;line-height:{DOCS_LH};margin:2pt 0 0;color:#1a1a1a">'
-             f'<b style="color:#1f4d36;letter-spacing:0.09em;text-transform:uppercase">The documents</b>'
-             f'<span style="color:#5f6661"> ({len(listed)}, by year)</span> '
+docs_html = [f'<p id="docs" style="font-size:{DOCS_PT}pt;line-height:{DOCS_LH};margin:2pt 0 0;color:#14213d">'
+             f'<b style="color:#1b4332;font-family:Public Sans,Helvetica,Arial,sans-serif">The documents</b>'
+             f'<span style="color:#5f5a4c"> ({len(listed)}, by year)</span> '
              + ' &middot; '.join(f'<b>{doc_year[d]}</b>&nbsp;{NAME[d]}' for d in listed) + '</p>']
 open(OUT, 'w', encoding='utf-8').write(open(TMPL, encoding='utf-8').read().replace('{{CHART}}', '\n'.join(s + docs_html)))
 print(sum(tot.values()), 'statements;', len(tot), 'recommendations;', Counter(dp[p]['status'] for p in ids))

@@ -4,42 +4,53 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How We Counted</title>
+<link rel="stylesheet" href="../assets/tokens.css">
 <style>
+  /* Civic-evidence system: tokens in ../assets/tokens.css, shared with the website and the one-pager (assets/DESIGN.md) */
   @page { size: Letter; margin: 0.55in 0 0.6in; }
   @page :first { margin-top: 0; }
-  :root { --forest: #1f4d36; --tint: #eef3ef; --ink: #1a1a1a; --mute: #5f6661; --miss: #b3261e; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body { margin: 0; padding: 0 0.65in; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.4; }
-  header { background: var(--forest); color: #fff; padding: 0.32in 0.65in 0.22in; margin: 0 -0.65in 14pt; }
-  .kicker { font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: #b9d3c1; margin: 0 0 8pt; }
-  h1 { font-family: "Iowan Old Style", "Palatino", Georgia, serif; font-weight: 700; font-size: 36pt; line-height: 1; margin: 0 0 10pt; letter-spacing: -0.01em; }
-  .dek { font-size: 12pt; line-height: 1.35; margin: 0; max-width: 34em; color: #e7efe9; }
-  h2 { font-size: 9pt; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin: 14pt 0 4pt; break-after: avoid; }
+  ::selection { background: var(--green); color: var(--card); }
+  .mast { border-top: 6pt solid var(--green); padding: 12pt 0 0; }
+  .mast .wm { font-family: var(--serif); font-weight: 700; font-size: 11pt; color: var(--ink); margin: 0; }
+  .mast .wm small { display: block; font-family: var(--sans); font-weight: 500; font-size: 9pt; color: var(--green-bright); margin-top: 1pt; }
+  h1 { font-family: var(--serif); font-weight: 700; line-height: 1.02; letter-spacing: -0.015em; color: var(--ink); margin: 14pt 0 8pt; text-wrap: balance; }
+  .dek { font-family: var(--serif); font-size: 12pt; line-height: 1.4; margin: 0; max-width: 34em; color: var(--ink-soft); }
+  h2 { font-family: var(--serif); font-size: 13pt; font-weight: 700; color: var(--ink); margin: 14pt 0 4pt; break-after: avoid; text-wrap: balance; }
+  .sub { font-family: var(--sans); font-size: 9pt; color: var(--muted); margin: 0 0 6pt; }
+  .panel { background: var(--card); border: 0.75pt solid var(--rule); padding: 8pt 12pt 7pt; break-inside: avoid; }
+  .panel h3 { font-family: var(--sans); font-size: 9.5pt; font-weight: 600; color: var(--green); margin: 0 0 4pt; }
+  blockquote cite, .note { font-family: var(--sans); }
+  body { margin: 0; padding: 0 0.65in; font-family: var(--serif); color: var(--ink-soft); background: var(--paper); font-size: 10pt; line-height: 1.45; font-variant-numeric: lining-nums; }
+  header { margin: 0 0 14pt; padding-bottom: 14pt; border-bottom: 0.75pt solid var(--rule); }
+  h1 { font-size: 34pt; }
   p { margin: 0 0 6pt; }
-  .sub { font-size: 9.5pt; color: var(--mute); margin: 0 0 6pt; }
+  strong, b, dt { color: var(--ink); }
   .steps { margin: 8pt 0 0; padding: 0; list-style: none; columns: 2; column-gap: 20pt; font-size: 9.5pt; }
   .steps li { margin: 0 0 5pt; break-inside: avoid; }
-  .panel { background: var(--tint); padding: 8pt 13pt 7pt; margin: 8pt 0; break-inside: avoid; }
-  .panel h3 { font-size: 9pt; letter-spacing: 0.09em; text-transform: uppercase; color: var(--forest); margin: 0 0 5pt; }
+  .panel { margin: 10pt 0; }
   .panel p:last-child, .panel ul:last-child { margin-bottom: 0; }
   ul.tight { margin: 0 0 6pt; padding-left: 14pt; } ul.tight li { margin: 0 0 3pt; }
-  dl { margin: 0; } dt { font-weight: 700; margin-top: 5pt; } dd { margin: 0 0 0 0; }
-  table { width: 100%; border-collapse: collapse; font-size: 8.4pt; line-height: 1.3; }
-  thead th { text-align: left; font-size: 7.5pt; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--forest); padding: 4pt 5pt; }
-  td { padding: 3.2pt 5pt; border-bottom: 0.5pt solid #d6ddd8; vertical-align: top; }
+  dl { margin: 0; } dt { font-weight: 700; margin-top: 5pt; } dd { margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 8.4pt; line-height: 1.3; background: var(--card); border: 0.75pt solid var(--rule); font-variant-numeric: tabular-nums; }
+  thead th { text-align: left; font-size: 8pt; font-weight: 600; color: var(--ink-soft); border-bottom: 1.5pt solid var(--ink); padding: 4pt 5pt; }
+  td { padding: 3.2pt 5pt; border-bottom: 0.5pt solid var(--paper-deep); vertical-align: top; color: var(--ink-soft); }
   td.c, th.c { text-align: center; }
-  tr.unc td { color: var(--mute); background: #f6f7f6; }
+  tr.unc td { color: var(--muted); background: var(--paper-deep); }
   tr { break-inside: avoid; }
   thead { display: table-header-group; }
   .pb { break-before: page; }
-  .note { font-size: 8pt; color: var(--mute); margin-top: 6pt; }
-  @media screen { body { max-width: 7.2in; margin: 0 auto; padding: 0 16px 32px; } header { margin: 0 -16px 14pt; padding: 28px 16px 20px; } svg { display: block; max-width: 640px; height: auto; } .tablewrap, table { overflow-x: auto; } }
-  @media screen and (max-width: 600px) { .steps { columns: 1; } h1 { font-size: 28pt; } }
+  .note { font-size: 8pt; color: var(--muted); margin-top: 6pt; }
+  a { color: var(--green); text-underline-offset: .2em; }
+  a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+  @media print { body { background: var(--card); } }
+  @media screen { body { max-width: 7.2in; margin: 0 auto; padding: 0 16px 32px; font-size: 16px; } .steps, .sub { font-size: 15px; } table { font-size: 14px; } thead th { font-size: 13px; } .note { font-size: 13px; } h1 { font-size: 44px; } h2 { font-size: 22px; } .dek { font-size: 19px; } .mast .wm { font-size: 18px; } .mast .wm small { font-size: 14px; } .panel h3 { font-size: 15px; } svg { display: block; max-width: 640px; height: auto; } .tablewrap { overflow-x: auto; } }
+  @media screen and (max-width: 600px) { .steps { columns: 1; } h1 { font-size: 34px; } }
 </style>
 </head>
 <body>
 <header>
-  <p class="kicker">Nashville's Highland Rim Forest · Methodology</p>
+  <div class="mast"><p class="wm">Nashville’s Highland Rim Forest<small>Methodology</small></p></div>
   <h1>How we counted.</h1>
   <p class="dek">We read 32 Metro documents from 1973 to 2026 and pulled every statement on forests, trees, open space and steep slopes. Here is how 1,272 statements became 19 recommendations, made 216 times, and how we checked what Metro actually did.</p>
 </header>
